@@ -200,6 +200,10 @@ function updateOverlayLayers() {
     layer.style.maskSize = '100% 100%';
     layer.style.webkitMaskRepeat = 'no-repeat';
     layer.style.maskRepeat = 'no-repeat';
+    // Mask PNGs are 8-bit grayscale (no alpha). Default match-source would
+    // treat them as fully opaque. Use luminance so white=show, black=hide.
+    layer.style.maskMode = 'luminance';
+    layer.style.webkitMaskSourceType = 'luminance';
     el.stageOverlay.appendChild(layer);
   });
 }
