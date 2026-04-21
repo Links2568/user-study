@@ -1,0 +1,44 @@
+{
+  "id": "19_ulm_000020_000019_leftImg8bit",
+  "image_id": "ulm_000020_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.0,
+    "longitude": 10.5,
+    "confidence": "Medium",
+    "region": "Germany, unknown city"
+  },
+  "reasoning": "Country level: Multiple German-language signs are visible. A blue parking sign on the right reads “hier rechts” and a red promotional sign above it mentions “pro Tag mit BahnCard 12€,” which explicitly references Deutsche Bahn’s BahnCard—specific to Germany. Road sign shapes (EU-style one-way blue circle with white arrow, red no-entry sign) and the euro currency symbol reinforce a European, specifically German, context. Architecture (modern midrise with C&A store), chained bollards, and extensive bicycle parking plus tram wires are all common in German city centers near train/tram hubs.\nCity level: The scene shows tram catenary, bus/tram stop shelters, and large bicycle parking suggesting the area around a main station (Bahnhof). However, no unique city names or landmarks are readable. Brands like C&A are widespread across Germany. Thus, while an urban German city with tram network is likely, the exact city cannot be determined from the visible text and features alone.\nStreet level: The precise corner is suggested by the directional parking sign saying “hier rechts” on a pole at the right curb, adjacent to chained bollards, a tram stop shelter, and a pedestrian crossing set back from the intersection. The combination of that specific parking wayfinding sign, the stacked red BahnCard promo sign above it, and the arrangement of bollards and chain along the curb characterizes this particular block near a station entrance, but it is insufficient to uniquely identify the exact street without additional readable place names.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue parking sign on a pole to the right",
+      "geolocation_element": "German text 'hier rechts', rightward arrows, European parking symbol 'P'",
+      "target_concept": "parking sign",
+      "level": "country",
+      "mask": "masks/blue_parking_sign_on_a_pole_to_the_right_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "red sign on a pole above the parking sign",
+      "geolocation_element": "German text 'pro Tag mit BahnCard 12€', euro symbol, reference to BahnCard (Deutsche Bahn)",
+      "target_concept": "red sign",
+      "level": "country",
+      "mask": "masks/red_sign_on_a_pole_above_the_parking_sign_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "row of short bollards with chains along the curb",
+      "geolocation_element": "Typical German/European city-center pedestrian protection near stations",
+      "target_concept": "bollards",
+      "level": "city",
+      "mask": "masks/row_of_short_bollards_with_chains_along_the_curb_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

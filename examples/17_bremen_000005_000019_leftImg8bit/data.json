@@ -1,0 +1,62 @@
+{
+  "id": "17_bremen_000005_000019_leftImg8bit",
+  "image_id": "bremen_000005_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 53.079,
+    "longitude": 8.804,
+    "confidence": "Medium",
+    "region": "Germany, Bremen, Bremen"
+  },
+  "reasoning": "Country-level: The scene shows right-hand traffic on a multi-lane urban street. Vehicles have EU-style license plates with the blue EU band and German-format characters. Several readable signs and ads are in German (e.g., “WINTER-CHECK,” “WAS GLAUBST DU EIGENTLICH WER DU BIST?”). These elements strongly indicate Germany and rule out neighboring countries with different plate formats or language on outdoor ads. Architectural cues (brick facades, modern glass/metal cladding) and the standardized German parking sign style (white P on blue with supplementary plate) support Germany.\nCity-level: A distant rooftop sign reads “BREMER HAUS,” which explicitly references Bremen. While many German cities share similar streetscapes, that wordmark ties the location to Bremen rather than Hamburg, Hannover, or Berlin. The presence of a possible “HB-” style license plate prefix on the central black car (typical for Bremen) is consistent with this inference.\nStreet-level: The immediate features include a bus stop shelter on the right with a freestanding ad board in front of it, a distinctive quilted metal-clad building facade on the left, and continuous parking bays with parallel-parked cars on the right. The specific combination of the “BREMER HAUS” building visible down the corridor, the right-side bus stop plus billboard, and the quilted facade helps distinguish this particular corridor from other Bremen streets with different facades or without a nearby bus stop/billboard pairing.\nStep-down elimination: After confirming Germany via language and plates, the unique “BREMER HAUS” sign points to Bremen. Within Bremen, the modern commercial corridor with mid-rise blocks, bus stop, and the metallic quilted facade narrows to a specific arterial in the central area, though the exact street name is uncertain without more signage.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue billboard on a sidewalk",
+      "geolocation_element": "German sentence text ('WAS GLAUBST DU EIGENTLICH WER DU BIST?'), German URL ('ich-test.de')",
+      "target_concept": "billboard",
+      "level": "country",
+      "mask": "masks/blue_billboard_on_a_sidewalk_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "white license plate on a black car",
+      "geolocation_element": "EU blue band with circle of stars, German-style alphanumeric format with hyphen (e.g., two-letter city code)",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_black_car_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "white wordmark on a distant building facade",
+      "geolocation_element": "text 'BREMER HAUS' referencing Bremen",
+      "target_concept": "wordmark",
+      "level": "city",
+      "mask": "masks/white_wordmark_on_a_distant_building_facade_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "glass bus shelter by the curb",
+      "geolocation_element": "typical German/European urban bus stop design adjacent to billboard seen in many German cities",
+      "target_concept": "bus shelter",
+      "level": "country",
+      "mask": "masks/glass_bus_shelter_by_the_curb_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "metal-clad building facade on the left",
+      "geolocation_element": "distinctive facade acting as a local landmark along this street segment",
+      "target_concept": "building facade",
+      "level": "street",
+      "mask": "masks/metal-clad_building_facade_on_the_left_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

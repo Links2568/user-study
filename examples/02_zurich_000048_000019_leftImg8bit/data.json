@@ -1,0 +1,44 @@
+{
+  "id": "02_zurich_000048_000019_leftImg8bit",
+  "image_id": "zurich_000048_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 47.3769,
+    "longitude": 8.5417,
+    "confidence": "Medium",
+    "region": "Switzerland, Canton of Zürich, Zürich"
+  },
+  "reasoning": "Country level: The scene shows right-hand traffic, EU-style blue parking sign, and triangular warning sign with a red border, all typical of continental Europe. The curbside parking spaces are outlined in blue, a hallmark of Switzerland’s “blue zone” parking. Most decisive is the rear license plate on the central car: a white plate with small Swiss-style shields and a two-letter canton code followed by digits, indicating Switzerland. Additionally, a storefront sign at left reads German text (“Vetterli”), pointing to the German-speaking part of Switzerland rather than French or Italian regions.\nCity level: The canton code visible on the license plate reads “ZH,” which corresponds to the Canton of Zürich. The dense but low-rise residential blocks with balconies, wire-suspended streetlights spanning the roadway, and abundant trimmed hedges are common in Zürich’s inner districts. German-language business signage further supports Zürich over other ZH towns because this urban density and streetscape better match Zürich city neighborhoods.\nStreet level: Narrow two-lane residential street with blue-zone parking on both sides, a pay-parking sign on the right sidewalk, and a distinctive stone church tower visible down the axis of the street help narrow to a specific block type within Zürich (older residential quarters). The combination of the “Vetterli” shop sign on the left facade, the wire-suspended single-lamp fixtures aligned along the centerline, and continuous hedge-lined sidewalks characterizes a particular street segment, even if the exact street name cannot be confirmed.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "blue parking sign on a pole",
+      "geolocation_element": "European-style white 'P' on blue with supplementary panel typical of Swiss parking signage",
+      "target_concept": "parking sign",
+      "level": "country",
+      "mask": "masks/blue_parking_sign_on_a_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "blue curb line on the asphalt",
+      "geolocation_element": "'Blue zone' parking marking, characteristic of Switzerland",
+      "target_concept": "curb line",
+      "level": "country",
+      "mask": "masks/blue_curb_line_on_the_asphalt_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "stone church tower in the distance",
+      "geolocation_element": "Historic European church architecture aligning with Zürich neighborhoods",
+      "target_concept": "church tower",
+      "level": "city",
+      "mask": "masks/stone_church_tower_in_the_distance_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "13_bochum_000000_038022_leftImg8bit",
+  "image_id": "bochum_000000_038022_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.48,
+    "longitude": 7.22,
+    "confidence": "Low",
+    "region": "Germany, North Rhine–Westphalia, likely Ruhr area (e.g., Bochum)"
+  },
+  "reasoning": "Country-level: The road furniture and markings are European: a blue circular keep-right traffic sign, white dashed lane lines, and a small grass splitter island. Multiple German-language texts are visible: “Tiefgarage” on the wall at right, parking guidance boards with “P” and numbered car parks, and a hotel sign reading “acora Hotel und …”. A yellow shield logo for “HUK” (a well-known German insurer) further reinforces Germany. Left-hand buildings and parked cars match Central European urban streets. These cues jointly point strongly to Germany while ruling out neighboring countries with different language on parking/garage signs (e.g., France “Parking souterrain,” Netherlands “Parkeergarage”).\nCity-level: The “acora” brand is a German hotel/aparthotel chain present in several cities (e.g., Bochum, Bonn, Düsseldorf). The co-location of an HUK storefront next to an acora sign and a nearby underground garage entrance suggests a dense mixed-use neighborhood typical of mid-sized Ruhr/Rhineland cities. Parking guidance boards showing multiple car parks labeled “P3, P5” are characteristic of German city centers. However, without a readable street or district name, multiple acora locations remain plausible. Architecture (postwar stucco apartment blocks with ground-floor retail) and tree-lined median resemble Ruhr area streets (e.g., Bochum, Essen) more than southern cities, but this is not definitive.\nStreet-level: Unique elements include the specific storefront cluster: an “acora” hotel sign mounted high on the right-hand building, a yellow “HUK” shield sign just below, a wall-mounted “Tiefgarage” label by a ramped entrance, and a nearby parking guidance pole with multiple arrows. The blue keep-right sign on the divider and building number “43” on a left façade further individualize the exact block, but text lacks a city name, preventing precise identification.\nOverall, the evidence strongly indicates Germany, likely a Ruhr/Rhineland city with an acora hotel adjacent to an HUK office and underground parking, but the exact city and street cannot be confirmed from visible text alone.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "white parking sign with blue P and right arrows on a pole",
+      "geolocation_element": "parking guidance format with multiple car parks labeled P3, P5 in German style",
+      "target_concept": "parking sign",
+      "level": "country",
+      "mask": "masks/white_parking_sign_with_blue_P_and_right_arrows_on_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "rectangular hotel sign above an entrance reading acora",
+      "geolocation_element": "brand name “acora” and German phrase “Hotel und …”",
+      "target_concept": "hotel sign",
+      "level": "country",
+      "mask": "masks/rectangular_hotel_sign_above_an_entrance_reading_a_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "yellow shop sign with shield logo above a doorway",
+      "geolocation_element": "German insurer brand “HUK” recognizable in Germany",
+      "target_concept": "shop sign",
+      "level": "country",
+      "mask": "masks/yellow_shop_sign_with_shield_logo_above_a_doorway_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "white wall sign above garage entrance reading Tiefgarage",
+      "geolocation_element": "German word “Tiefgarage” indicating underground parking",
+      "target_concept": "wall sign",
+      "level": "country",
+      "mask": "masks/white_wall_sign_above_garage_entrance_reading_Tief_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_7",
+      "object_description": "underground garage entrance with open rectangular bay",
+      "geolocation_element": "paired with nearby German ‘Tiefgarage’ label indicating local facility",
+      "target_concept": "garage entrance",
+      "level": "street",
+      "mask": "masks/underground_garage_entrance_with_open_rectangular_mask.png",
+      "color": "#4a6f5c"
+    }
+  ]
+}

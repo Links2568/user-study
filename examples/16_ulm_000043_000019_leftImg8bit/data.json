@@ -1,0 +1,44 @@
+{
+  "id": "16_ulm_000043_000019_leftImg8bit",
+  "image_id": "ulm_000043_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.78,
+    "longitude": 9.18,
+    "confidence": "Low",
+    "region": "Germany, Baden-Württemberg, Stuttgart (approximate)"
+  },
+  "reasoning": "Country level: The road scene shows right‑hand traffic, EU‑style long white license plates with a blue band, and white dashed lane markings typical of continental Europe. The roadside “igloo” recycling container and tall metal streetlight poles are common in German‑speaking Central Europe. A freestanding poster board appears to contain German words and typography. These cues collectively point most strongly to Germany (also plausible: Switzerland or Austria). City level: The terrain is gently hilly with dense roadside trees and an industrial‑edge street feel. The poster board format, lane‑marking style (short dashes with inset turn arrows), and beige glass‑recycling igloo are especially common in southwestern Germany (Baden‑Württemberg). The distant slim broadcast tower on a wooded ridge resembles the type seen around Stuttgart’s hills; Zurich/Austrian towns are possible but less consistent with the signage furniture and lane patterns. Street level: A broad two‑lane urban collector with a painted center separation, right‑side sidewalk, and isolated lamp standards. A beige glass‑recycling igloo sits on the grass verge near a metal streetlight, next to a wooden‑leg poster board. These objects, together with the lightly industrial fencing on the left and the gentle rightward road bend, distinguish a specific suburban/industrial approach road typical of Stuttgart’s outskirts.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "beige recycling container on grass",
+      "geolocation_element": "igloo-style public glass-recycling container common in German-speaking countries",
+      "target_concept": "recycling container",
+      "level": "country",
+      "mask": "masks/beige_recycling_container_on_grass_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "rectangular poster board beside a pole",
+      "geolocation_element": "German-language text and local event-style advertising layout",
+      "target_concept": "poster board",
+      "level": "country",
+      "mask": "masks/rectangular_poster_board_beside_a_pole_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "chain-link fence along sidewalk",
+      "geolocation_element": "industrial-edge streetscape common to German suburban zones",
+      "target_concept": "fence",
+      "level": "city",
+      "mask": "masks/chain-link_fence_along_sidewalk_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

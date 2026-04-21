@@ -1,0 +1,44 @@
+{
+  "id": "01_hamburg_000000_077756_leftImg8bit",
+  "image_id": "hamburg_000000_077756_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 53.56,
+    "longitude": 9.97,
+    "confidence": "Medium",
+    "region": "Germany, Hamburg, Hamburg"
+  },
+  "reasoning": "Country level: The scene shows European urban features: narrow tree-lined street, dense late-19th-century stucco façades (Altbau), bicycles, and EU-style traffic signage. A circular blue sign with a red X indicates a European no-parking sign used in Germany and neighboring countries. A prominent beer sign reads “Holsten,” a German brand, further supporting Germany. The van’s white EU license plate with a blue band is consistent with German plates. Together these cues point to Germany rather than other European countries.\nCity level: The “Holsten” beer brand is strongly associated with Hamburg (Holsten Brewery is Hamburg-based and widely advertised on local bars). The architecture—grand Gründerzeit blocks with mature street trees—matches Hamburg neighborhoods such as Sternschanze, St. Pauli, Eimsbüttel, or Altona more than many other German cities. The casual corner bar with outdoor benches and bicycles is typical of these Hamburg quarters, increasing the likelihood of Hamburg over, say, Munich or Berlin.\nStreet level: Specific cues include a corner bar with a rectangular red sign reading “Tippell” and a circular Holsten placard mounted above the entrance, plus closely parked cars along both curbs, a slight curb extension with trees, and a quiet residential cross-street. These elements together suggest a secondary neighborhood street with cafés, characteristic of Hamburg’s Schanzenviertel/Eimsbüttel area rather than a main arterial. The precise street can’t be confirmed without a readable street-name sign, but the corner establishment branding (Tippell + Holsten placard) and the Altbau façades with uniform window bays provide distinctive street-level identifiers.\nElimination: Non-German candidates are disfavored due to the German-style no-parking sign and the Holsten brand. Within Germany, southern cities often feature different beer branding and architectural coloration; Berlin’s signage and corner-kneipe styles differ, and Holsten branding density is notably Hamburg-centric. Thus Hamburg is the most consistent inference.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "round shop sign on a wall",
+      "geolocation_element": "text 'Holsten' with beer logo, German beer branding",
+      "target_concept": "shop sign",
+      "level": "country",
+      "mask": "masks/round_shop_sign_on_a_wall_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "rectangular shop sign above a window",
+      "geolocation_element": "text 'Tippell' in Latin script, specific venue name",
+      "target_concept": "shop sign",
+      "level": "city",
+      "mask": "masks/rectangular_shop_sign_above_a_window_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "wooden bench set in front of a bar",
+      "geolocation_element": "sidewalk café seating typical of Hamburg neighborhood bars near Schanze/Eimsbüttel",
+      "target_concept": "bench",
+      "level": "city",
+      "mask": "masks/wooden_bench_set_in_front_of_a_bar_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "06_stuttgart_000170_000019_leftImg8bit",
+  "image_id": "stuttgart_000170_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.5216,
+    "longitude": 9.0576,
+    "confidence": "Medium",
+    "region": "Germany, Baden-Württemberg, Tübingen"
+  },
+  "reasoning": "Country level: The large roadside billboard carries German text (“LETZTE CHANCE! MAMMA MIA! Abschiedstickets ab 29,90”), including the comma as a decimal separator, strongly indicating Germany. Road markings (broken white edge lines, ladder-style zebra), European traffic lights, and architecture with steep red tile roofs and dormer windows align with central European—specifically German—urban streetscapes, while excluding North America (different signals/markings) and the UK/Ireland (left-side driving). The car hood ornament is a Mercedes emblem, common everywhere but thematically consistent with Germany.\nCity level: The hilly backdrop with dense trees behind late‑19th‑century institutional buildings suggests a southwest German university town. The pale yellow plaster building with multiple dormers and the sandstone-classical building across the intersection resemble architecture common in Baden‑Württemberg (e.g., Tübingen/Stuttgart region). The billboard’s theater-style promotion mirrors Stuttgart-area musical advertising; combined with the university-town look and visible hills, Tübingen is a strong candidate over flatter cities like Mannheim or Karlsruhe.\nStreet level: The scene shows a curving multi-lane junction with a pedestrian crossing, guardrail on the right sidewalk, and a freestanding billboard beside a yellow stucco building with three evenly spaced dormer windows. Overhead signal heads hang on a span wire across the junction. These elements together would help pinpoint a specific intersection near Tübingen’s central area where such a billboard and this yellow building face a broad arterial with a slight uphill grade and wooded hillside beyond.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "billboard sign with white panel on a metal frame",
+      "geolocation_element": "German text 'LETZTE CHANCE! MAMMA MIA! Abschiedstickets ab 29,90', decimal comma",
+      "target_concept": "billboard sign",
+      "level": "country",
+      "mask": "masks/billboard_sign_with_white_panel_on_a_metal_frame_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "crosswalk marking of white rectangular bars on asphalt",
+      "geolocation_element": "German/continental zebra pattern and lane edge markings style",
+      "target_concept": "crosswalk marking",
+      "level": "country",
+      "mask": "masks/crosswalk_marking_of_white_rectangular_bars_on_asp_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "building facade with yellow plaster and three dormer windows",
+      "geolocation_element": "Southwest German architectural style with red clay tiles and dormers",
+      "target_concept": "building facade",
+      "level": "country",
+      "mask": "masks/building_facade_with_yellow_plaster_and_three_dorm_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "overhead signal mast with span wire across the junction",
+      "geolocation_element": "German-style span-wire traffic signal arrangement seen in some cities",
+      "target_concept": "signal mast",
+      "level": "country",
+      "mask": "masks/overhead_signal_mast_with_span_wire_across_the_jun_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

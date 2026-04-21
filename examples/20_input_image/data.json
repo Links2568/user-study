@@ -1,0 +1,47 @@
+{
+  "id": "20_input_image",
+  "image_id": "input_image",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": {
+    "lat": 53.5535,
+    "lon": 10.0027
+  },
+  "location_estimate": {
+    "latitude": 53.5532,
+    "longitude": 9.9976,
+    "confidence": "High",
+    "region": "Germany, Hamburg"
+  },
+  "reasoning": "The image shows a street scene in a European city, as indicated by the architecture and road infrastructure. The 'Apotheke' (German for pharmacy) sign and the blue-and-white pedestrian crossing sign suggest a German-speaking country. The specific style of the orange trash can is highly characteristic of the 'Stadtreinigung Hamburg' (Hamburg City Cleaning). A street sign is visible with the text 'Brandsende', which is a street located in central Hamburg. Furthermore, a restaurant named 'qu\u0001n \u0001\u0001' (Vietnamese Street Kitchen) is visible on the left, which is located at Brandsende 12, 20095 Hamburg. The intersection is between Brandsende and Raboisen. The vehicle from which the photo is taken is a Mercedes-Benz, a common German luxury car brand.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "red shop sign on a building",
+      "geolocation_element": "Vietnamese restaurant name 'qu\u0001n \u0001\u0001' located in Hamburg",
+      "target_concept": "shop sign",
+      "level": "street",
+      "mask": "masks/red_shop_sign_on_a_building_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "blue street sign on a pole",
+      "geolocation_element": "street name 'Brandsende' in Hamburg",
+      "target_concept": "street sign",
+      "level": "street",
+      "mask": "masks/blue_street_sign_on_a_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "orange trash can on a post",
+      "geolocation_element": "distinctive Hamburg city trash can design",
+      "target_concept": "trash can",
+      "level": "city",
+      "mask": "masks/orange_trash_can_on_a_post_mask.png",
+      "color": "#8ba867"
+    }
+  ]
+}

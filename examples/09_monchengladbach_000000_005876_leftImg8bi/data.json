@@ -1,0 +1,44 @@
+{
+  "id": "09_monchengladbach_000000_005876_leftImg8bi",
+  "image_id": "monchengladbach_000000_005876_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.196,
+    "longitude": 6.443,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, Mönchengladbach"
+  },
+  "reasoning": "Country level: The vehicles drive on the right and use European road elements. The white long, narrow license plates with an EU blue band and the “D” country code, plus the DIN-style typeface, indicate Germany. The blue circular bicycle-path sign (German StVO sign 237) and the specific road marking style (white dashed center line; red-painted mandatory cycle path at curb) are also characteristic of Germany, reinforcing the country identification while excluding nearby countries that use different cycle signage (e.g., France or the Netherlands).  City level: The foremost license plate on the left is clearly readable as “MG – NK 3004.” In Germany, the first letters encode the registration district; “MG” corresponds to Mönchengladbach (North Rhine-Westphalia). While a car’s plate does not guarantee the precise location, multiple context cues (ordinary mid-rise brick and stucco housing typical of NRW, and no competing city-specific identifiers) make Mönchengladbach a reasonable city hypothesis while discounting larger NRW cities with more distinct street furniture or tram infrastructure (e.g., Düsseldorf, Cologne).  Street level: The street shows a curbside mandatory cycle path marked with red pavement and a blue round sign placed just before a slip-merge, concrete planter-bollards protecting parallel parking bays, and mixed brick-and-plaster residential blocks of 4–5 stories. This arrangement—red curbside cycle lane ending/merging at an intersection, discrete planter barriers between parking pockets, and narrow carriageway with a slight S-curve—helps narrow to a local residential-arterial typical of Mönchengladbach’s inner districts, though an exact street name cannot be confirmed from the view.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "license plate on a black hatchback",
+      "geolocation_element": "EU blue band with country code D, German DIN-style typeface, hyphenated format, district code 'MG' followed by letters and numbers",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/license_plate_on_a_black_hatchback_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "bike lane with red asphalt at the right edge",
+      "geolocation_element": "German-style mandatory cycle path treatment adjacent to sidewalk, merge markings at junction",
+      "target_concept": "bike lane",
+      "level": "country",
+      "mask": "masks/bike_lane_with_red_asphalt_at_the_right_edge_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "bollard beside the sidewalk",
+      "geolocation_element": "use of concrete planter-bollards separating parking bays from sidewalk, typical of local residential streets",
+      "target_concept": "bollard",
+      "level": "street",
+      "mask": "masks/bollard_beside_the_sidewalk_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

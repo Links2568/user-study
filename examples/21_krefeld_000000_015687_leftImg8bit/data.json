@@ -1,0 +1,44 @@
+{
+  "id": "21_krefeld_000000_015687_leftImg8bit",
+  "image_id": "krefeld_000000_015687_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 50.9413,
+    "longitude": 6.9583,
+    "confidence": "Low",
+    "region": "Germany, North Rhine–Westphalia, Cologne (approximate)"
+  },
+  "reasoning": "Country level: The road furniture and traffic control devices are distinctly continental European. The blue circular “no stopping” sign with red X, the rectangular blue “P” parking signs, and the red bicycle crossing strip with a white bike pictogram are standard in Germany. Crucially, the supplementary plates under the parking signs contain German words (e.g., ‘mit Parkschein/Anwohner’ style text), and the cars display EU plates with a blue band consistent with German plates, pointing strongly to Germany over Austria/Switzerland due to the exact parking-plate typography and layout common in German cities. Right-hand traffic and stone curb/sidewalk design also align with Germany.\nCity level: The scene shows dense but mid-rise mixed office/residential blocks, tree-lined side street, and a high prevalence of regulated curbside parking with German “Parkschein” style signage typical of large North Rhine–Westphalia cities (Cologne/Düsseldorf). No alpine cues (argues against southern cities like Munich). No distinctive skyline elements to isolate one city; however, the modern ribbon-window office block opposite older plastered buildings and the narrow one-way feel are common in central Cologne districts. City inference is tentative.\nStreet level: Specific elements include paired parking-ticket signs on both sides, a red painted bicycle priority crossing segment mid-lane, a cylindrical concrete bollard on the right sidewalk, and a do-not-enter sign at the far end. The combination and spacing of these signs, together with the ivy-covered wall on the left and the particular facade pattern of the beige office building, distinguish this block from nearby ones.\nOverall, the evidence supports Germany, likely Cologne inner district, but the exact street is uncertain.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue parking sign on a pole",
+      "geolocation_element": "German-language supplementary plate formatting under the P sign; German parking-ticket (‘Parkschein/Anwohner’) style",
+      "target_concept": "parking sign",
+      "level": "country",
+      "mask": "masks/blue_parking_sign_on_a_pole_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "red bicycle lane marking on the road",
+      "geolocation_element": "German-style bicycle crossing marking and dashed priority lines",
+      "target_concept": "bicycle lane marking",
+      "level": "country",
+      "mask": "masks/red_bicycle_lane_marking_on_the_road_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "do not enter sign at the end of the street",
+      "geolocation_element": "EU-standard sign used in Germany indicating one-way restriction typical of German urban side streets",
+      "target_concept": "do not enter sign",
+      "level": "country",
+      "mask": "masks/do_not_enter_sign_at_the_end_of_the_street_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

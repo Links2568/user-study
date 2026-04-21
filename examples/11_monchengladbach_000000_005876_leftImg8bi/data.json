@@ -1,0 +1,62 @@
+{
+  "id": "11_monchengladbach_000000_005876_leftImg8bi",
+  "image_id": "monchengladbach_000000_005876_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.194,
+    "longitude": 6.438,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine–Westphalia, Mönchengladbach"
+  },
+  "reasoning": "Country-level: The vehicles have EU-style license plates with a blue band and long white plates. Road markings, signage, and right-hand traffic match continental Europe. The round blue bicycle sign with a white bicycle pictogram is a standard German Verkehrszeichen (237/240 style), and the curb-integrated concrete planters and red asphalt bike lane are also typical in Germany. This steers strongly to Germany over neighboring countries.\nCity-level: The front-left car’s plate shows the prefix “MG,” which is the German registration code for Mönchengladbach. German city codes on plates are reliable indicators of the vehicle’s registration district, and multiple nearby cars appear to have similar German plates. No other signage contradicts this, so Mönchengladbach, North Rhine–Westphalia, is the best city inference.\nStreet-level: The scene shows a straight two-lane urban street with large rectangular concrete planters lining both curbs, a bend with dashed merge markings, and a protected right-side bike lane transitioning at a corner with red pavement and shark-tooth-style dashed edge lines. Buildings are 4–5 stories, with a mix of light render and red brick. A blue circular bicycle sign stands at the start of the bike lane near a light green rendered facade. These elements could help distinguish this specific block within Mönchengladbach among similarly dense residential-commercial streets.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white license plate on a black car at the left curb",
+      "geolocation_element": "EU blue band with circle of stars, German-style typeface, city code letters 'MG' followed by hyphen",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_black_car_at_the_left_cur_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "red bike lane at the right edge of the roadway",
+      "geolocation_element": "German urban cycle infrastructure coloring and integration with curb",
+      "target_concept": "bike lane",
+      "level": "country",
+      "mask": "masks/red_bike_lane_at_the_right_edge_of_the_roadway_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "dashed merge road marking in the center lane",
+      "geolocation_element": "EU/German road marking style with line length and spacing",
+      "target_concept": "road marking",
+      "level": "country",
+      "mask": "masks/dashed_merge_road_marking_in_the_center_lane_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "rectangular concrete planter on the left sidewalk edge",
+      "geolocation_element": "series of heavy curbside planters used as traffic calming typical in German cities",
+      "target_concept": "planter",
+      "level": "city",
+      "mask": "masks/rectangular_concrete_planter_on_the_left_sidewalk_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "red brick building facade on the left side",
+      "geolocation_element": "Northern German/NRW urban brick architecture common in the region",
+      "target_concept": "building facade",
+      "level": "country",
+      "mask": "masks/red_brick_building_facade_on_the_left_side_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

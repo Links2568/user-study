@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeoPrivacy — Clue Segmentation Viewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="title-block">
+      <div class="kanji-mark" aria-hidden="true">手がかり</div>
+      <h1>Geo-Privacy Clue Viewer</h1>
+      <p class="subtitle">A quiet inspection of visual clues &amp; the reasoning behind them</p>
+    </div>
+  </div>
+  <div class="header-divider"></div>
+</header>
+
+<main>
+  <section class="strip-section">
+    <div class="strip-header">
+      <span class="dot"></span>
+      <h2>Samples</h2>
+      <span class="count" id="sampleCount">—</span>
+    </div>
+    <div class="thumb-strip" id="thumbStrip"></div>
+  </section>
+
+  <section class="viewer">
+    <div class="stage-col">
+      <div class="stage-wrap">
+        <div class="stage" id="stage">
+          <img class="stage-image" id="stageImage" alt="">
+          <div class="stage-overlay" id="stageOverlay"></div>
+        </div>
+        <div class="caption" id="imgCaption"></div>
+      </div>
+
+      <div class="panel reasoning-panel">
+        <div class="panel-heading">
+          <span class="brush-bar"></span>
+          <h3>Reasoning</h3>
+        </div>
+        <p class="reasoning-text" id="reasoningText"></p>
+        <div class="meta-row" id="metaRow"></div>
+      </div>
+    </div>
+
+    <aside class="side-col">
+      <div class="panel clues-panel">
+        <div class="panel-heading">
+          <span class="brush-bar"></span>
+          <h3>Clues <span class="hint">hover to reveal</span></h3>
+        </div>
+        <ul class="clue-list" id="clueList"></ul>
+      </div>
+
+      <div class="panel controls-panel">
+        <div class="panel-heading">
+          <span class="brush-bar"></span>
+          <h3>Display</h3>
+        </div>
+        <label class="slider-row">
+          <span>Overlay opacity</span>
+          <input type="range" id="opacityRange" min="20" max="100" value="70">
+          <span class="slider-value" id="opacityValue">70%</span>
+        </label>
+        <label class="toggle-row">
+          <input type="checkbox" id="showAllToggle">
+          <span>Show all clues at once</span>
+        </label>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>Static viewer · <span id="buildDate"></span></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

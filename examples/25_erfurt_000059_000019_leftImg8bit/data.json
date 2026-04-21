@@ -1,0 +1,62 @@
+{
+  "id": "25_erfurt_000059_000019_leftImg8bit",
+  "image_id": "erfurt_000059_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 50.9271,
+    "longitude": 11.5892,
+    "confidence": "Low",
+    "region": "Germany, Thuringia, Jena"
+  },
+  "reasoning": "Country level: The road scene shows EU-style regulatory signs (red-bordered triangle, blue no-stopping sign with red X, red no-entry disk), right-hand driving, and embedded tram tracks in the carriageway. Vehicles carry long, white EU license plates with a blue band at the left, consistent with many EU countries. The font and hyphenated format on the plate visible on the grey van match Germany’s FE-Schrift license plates, pushing the estimate to Germany. Street furniture and traffic light/signal posts also match German standards.\nCity level: The presence of on-street tram rails and a modern glass shelter with a slender red stop totem suggests a German midsize city with a tram network. The compact Altstadt architecture with steep red-gabled roofs and a dark church tower hints toward central/eastern Germany rather than northern or alpine regions. Among German tram cities with similar streetscapes (Erfurt, Jena, Halle, Leipzig), the red stop mast and minimalist shelter style are characteristic of Jena’s tram stops more than Erfurt’s (which often show green/yellow “H” signage prominently). The narrow street with mixed tram-auto operation and the skyline with a squat dark spire align with Jena’s central districts. Alternatives like Leipzig/Halle tend to have broader boulevards and different stop furniture; southern Bavarian tram cities (Augsburg/Munich) show different facade styles and signage palettes. Thus, Jena, Thuringia, is a plausible match.\nStreet level: The specific street shows single-track-in-lane tram rails curving right next to a glass shelter with a red information totem, a parking bay to the right with bike racks, and a row of white facades with decorative motifs and steep gables. A dark stone church tower with a lantern top stands ahead-right. This combination—tram-in-mixed-traffic beside a compact square with parking and a red-topped stop mast—helps distinguish this block from other Jena streets with segregated tram corridors.\n",
+  "clues": [
+    {
+      "id": "clue_2",
+      "object_description": "glass tram shelter at the curb",
+      "geolocation_element": "paired with urban tram tracks; German-style stop furniture",
+      "target_concept": "tram shelter",
+      "level": "country",
+      "mask": "masks/glass_tram_shelter_at_the_curb_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "steel tram track in the roadway",
+      "geolocation_element": "on-street tram operation common in specific German cities",
+      "target_concept": "tram track",
+      "level": "country",
+      "mask": "masks/steel_tram_track_in_the_roadway_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "red information totem beside the shelter",
+      "geolocation_element": "stop totem style associated with Jena tram stops",
+      "target_concept": "information totem",
+      "level": "city",
+      "mask": "masks/red_information_totem_beside_the_shelter_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "white gabled building with red tile roof",
+      "geolocation_element": "central/eastern German Altstadt architectural style",
+      "target_concept": "gabled building",
+      "level": "country",
+      "mask": "masks/white_gabled_building_with_red_tile_roof_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "dark church tower with lantern top",
+      "geolocation_element": "historic church skyline common in central German towns; helps narrow within region",
+      "target_concept": "church tower",
+      "level": "city",
+      "mask": "masks/dark_church_tower_with_lantern_top_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

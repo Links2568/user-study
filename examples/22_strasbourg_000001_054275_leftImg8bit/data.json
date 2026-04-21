@@ -1,0 +1,53 @@
+{
+  "id": "22_strasbourg_000001_054275_leftImg8bit",
+  "image_id": "strasbourg_000001_054275_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.584,
+    "longitude": 7.745,
+    "confidence": "Medium",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "reasoning": "Country level: The rectangular blue enamel street sign on the left wall reads “Rue de la …” in French, a standard French street-sign style (white text on blue). Additional posters and notices on the same wall have French words. Traffic lights, zebra crossing style, and triangular red-bordered warning sign match French road furnishings. These cues point strongly to France and rule out neighboring Germany or Switzerland where street-sign typography and language differ.\nCity level: The right side shows embedded tram tracks laid in cobblestones with slim grey signal poles—typical of the modern CTS tram network used in Strasbourg. The surrounding sandstone/cream mid-rise buildings and a historic church-like structure with steep slate roof are typical of Strasbourg’s center. The combination of French signage plus CTS-style tracks and street furniture narrows to Strasbourg over other French tram cities (e.g., Bordeaux, Lyon) whose trackbed and pole designs differ and where street name plates often omit “Rue de la …” style found widely in Alsace.\nStreet level: The blue wall sign specifies the street name beginning “Rue de la …” and appears to include multiple words consistent with “Rue de la Division Leclerc,” a known central street in Strasbourg. The intersection features a pedestrian zebra crossing leading to a small plaza with tram right-of-way curving to the right beside a church façade with narrow arched windows and flower planters along a low wall—details that distinguish this junction from other streets nearby. Together these elements suggest a central Strasbourg intersection along a tram corridor near historic buildings.\nElimination summary: Language and sign format fix France; tram infrastructure and street furniture align with Strasbourg; the specific street name and adjacent church/tram layout refine to a particular central intersection.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue street sign on a wall",
+      "geolocation_element": "French language text 'Rue de la …', French street-sign style (white on blue)",
+      "target_concept": "street sign",
+      "level": "country",
+      "mask": "masks/blue_street_sign_on_a_wall_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "tram track on cobblestone roadway",
+      "geolocation_element": "modern low-floor tramway infrastructure characteristic of Strasbourg CTS",
+      "target_concept": "tram track",
+      "level": "city",
+      "mask": "masks/tram_track_on_cobblestone_roadway_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "church façade with steep roof",
+      "geolocation_element": "Central-European/Alsatian ecclesiastical architecture common in Strasbourg’s old town",
+      "target_concept": "church façade",
+      "level": "city",
+      "mask": "masks/church_faade_with_steep_roof_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "zebra crossing on asphalt",
+      "geolocation_element": "French crosswalk marking style",
+      "target_concept": "zebra crossing",
+      "level": "country",
+      "mask": "masks/zebra_crossing_on_asphalt_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

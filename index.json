@@ -1,0 +1,204 @@
+{
+  "samples": [
+    {
+      "id": "01_hamburg_000000_077756_leftImg8bit",
+      "path": "examples/01_hamburg_000000_077756_leftImg8bit",
+      "thumbnail": "examples/01_hamburg_000000_077756_leftImg8bit/original.jpg",
+      "image_id": "hamburg_000000_077756_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, Hamburg, Hamburg"
+    },
+    {
+      "id": "02_zurich_000048_000019_leftImg8bit",
+      "path": "examples/02_zurich_000048_000019_leftImg8bit",
+      "thumbnail": "examples/02_zurich_000048_000019_leftImg8bit/original.jpg",
+      "image_id": "zurich_000048_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Switzerland, Canton of Zürich, Zürich"
+    },
+    {
+      "id": "03_darmstadt_000049_000019_leftImg8bit",
+      "path": "examples/03_darmstadt_000049_000019_leftImg8bit",
+      "thumbnail": "examples/03_darmstadt_000049_000019_leftImg8bit/original.jpg",
+      "image_id": "darmstadt_000049_000019_leftImg8bit",
+      "clue_count": 4,
+      "region": "Germany, North Rhine-Westphalia, Bochum (approximate)"
+    },
+    {
+      "id": "04_tubingen_000142_000019_leftImg8bit",
+      "path": "examples/04_tubingen_000142_000019_leftImg8bit",
+      "thumbnail": "examples/04_tubingen_000142_000019_leftImg8bit/original.jpg",
+      "image_id": "tubingen_000142_000019_leftImg8bit",
+      "clue_count": 4,
+      "region": "Germany, Baden-Württemberg, Freiburg im Breisgau"
+    },
+    {
+      "id": "05_dusseldorf_000083_000019_leftImg8bit",
+      "path": "examples/05_dusseldorf_000083_000019_leftImg8bit",
+      "thumbnail": "examples/05_dusseldorf_000083_000019_leftImg8bit/original.jpg",
+      "image_id": "dusseldorf_000083_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, North Rhine–Westphalia, Düsseldorf (near Berliner Allee and Oststraße)"
+    },
+    {
+      "id": "06_stuttgart_000170_000019_leftImg8bit",
+      "path": "examples/06_stuttgart_000170_000019_leftImg8bit",
+      "thumbnail": "examples/06_stuttgart_000170_000019_leftImg8bit/original.jpg",
+      "image_id": "stuttgart_000170_000019_leftImg8bit",
+      "clue_count": 4,
+      "region": "Germany, Baden-Württemberg, Tübingen"
+    },
+    {
+      "id": "07_erfurt_000016_000019_leftImg8bit",
+      "path": "examples/07_erfurt_000016_000019_leftImg8bit",
+      "thumbnail": "examples/07_erfurt_000016_000019_leftImg8bit/original.jpg",
+      "image_id": "erfurt_000016_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, Thuringia, Erfurt"
+    },
+    {
+      "id": "08_hanover_000000_034141_leftImg8bit",
+      "path": "examples/08_hanover_000000_034141_leftImg8bit",
+      "thumbnail": "examples/08_hanover_000000_034141_leftImg8bit/original.jpg",
+      "image_id": "hanover_000000_034141_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, Hamburg, Hamburg"
+    },
+    {
+      "id": "09_monchengladbach_000000_005876_leftImg8bi",
+      "path": "examples/09_monchengladbach_000000_005876_leftImg8bi",
+      "thumbnail": "examples/09_monchengladbach_000000_005876_leftImg8bi/original.jpg",
+      "image_id": "monchengladbach_000000_005876_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, North Rhine-Westphalia, Mönchengladbach"
+    },
+    {
+      "id": "10_zurich_000079_000019_leftImg8bit",
+      "path": "examples/10_zurich_000079_000019_leftImg8bit",
+      "thumbnail": "examples/10_zurich_000079_000019_leftImg8bit/original.jpg",
+      "image_id": "zurich_000079_000019_leftImg8bit",
+      "clue_count": 5,
+      "region": "Switzerland, Zürich, Zürich (near Paradeplatz/Bahnhofstrasse)"
+    },
+    {
+      "id": "11_monchengladbach_000000_005876_leftImg8bi",
+      "path": "examples/11_monchengladbach_000000_005876_leftImg8bi",
+      "thumbnail": "examples/11_monchengladbach_000000_005876_leftImg8bi/original.jpg",
+      "image_id": "monchengladbach_000000_005876_leftImg8bit",
+      "clue_count": 5,
+      "region": "Germany, North Rhine–Westphalia, Mönchengladbach"
+    },
+    {
+      "id": "12_monchengladbach_000001_001531_leftImg8bi",
+      "path": "examples/12_monchengladbach_000001_001531_leftImg8bi",
+      "thumbnail": "examples/12_monchengladbach_000001_001531_leftImg8bi/original.jpg",
+      "image_id": "monchengladbach_000001_001531_leftImg8bit",
+      "clue_count": 4,
+      "region": "Germany, North Rhine–Westphalia, Mönchengladbach"
+    },
+    {
+      "id": "13_bochum_000000_038022_leftImg8bit",
+      "path": "examples/13_bochum_000000_038022_leftImg8bit",
+      "thumbnail": "examples/13_bochum_000000_038022_leftImg8bit/original.jpg",
+      "image_id": "bochum_000000_038022_leftImg8bit",
+      "clue_count": 5,
+      "region": "Germany, North Rhine–Westphalia, likely Ruhr area (e.g., Bochum)"
+    },
+    {
+      "id": "14_stuttgart_000142_000019_leftImg8bit",
+      "path": "examples/14_stuttgart_000142_000019_leftImg8bit",
+      "thumbnail": "examples/14_stuttgart_000142_000019_leftImg8bit/original.jpg",
+      "image_id": "stuttgart_000142_000019_leftImg8bit",
+      "clue_count": 5,
+      "region": "Germany, Baden-Württemberg, Stuttgart (Rosenbergstraße area)"
+    },
+    {
+      "id": "15_strasbourg_000000_018153_leftImg8bit",
+      "path": "examples/15_strasbourg_000000_018153_leftImg8bit",
+      "thumbnail": "examples/15_strasbourg_000000_018153_leftImg8bit/original.jpg",
+      "image_id": "strasbourg_000000_018153_leftImg8bit",
+      "clue_count": 4,
+      "region": "France, Grand Est, Strasbourg (Petite France / Ponts Couverts)"
+    },
+    {
+      "id": "16_ulm_000043_000019_leftImg8bit",
+      "path": "examples/16_ulm_000043_000019_leftImg8bit",
+      "thumbnail": "examples/16_ulm_000043_000019_leftImg8bit/original.jpg",
+      "image_id": "ulm_000043_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, Baden-Württemberg, Stuttgart (approximate)"
+    },
+    {
+      "id": "17_bremen_000005_000019_leftImg8bit",
+      "path": "examples/17_bremen_000005_000019_leftImg8bit",
+      "thumbnail": "examples/17_bremen_000005_000019_leftImg8bit/original.jpg",
+      "image_id": "bremen_000005_000019_leftImg8bit",
+      "clue_count": 5,
+      "region": "Germany, Bremen, Bremen"
+    },
+    {
+      "id": "18_aachen_000172_000019_leftImg8bit",
+      "path": "examples/18_aachen_000172_000019_leftImg8bit",
+      "thumbnail": "examples/18_aachen_000172_000019_leftImg8bit/original.jpg",
+      "image_id": "aachen_000172_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, North Rhine–Westphalia, Duisburg"
+    },
+    {
+      "id": "19_ulm_000020_000019_leftImg8bit",
+      "path": "examples/19_ulm_000020_000019_leftImg8bit",
+      "thumbnail": "examples/19_ulm_000020_000019_leftImg8bit/original.jpg",
+      "image_id": "ulm_000020_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, unknown city"
+    },
+    {
+      "id": "20_input_image",
+      "path": "examples/20_input_image",
+      "thumbnail": "examples/20_input_image/original.jpg",
+      "image_id": "input_image",
+      "clue_count": 3,
+      "region": "Germany, Hamburg"
+    },
+    {
+      "id": "21_krefeld_000000_015687_leftImg8bit",
+      "path": "examples/21_krefeld_000000_015687_leftImg8bit",
+      "thumbnail": "examples/21_krefeld_000000_015687_leftImg8bit/original.jpg",
+      "image_id": "krefeld_000000_015687_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, North Rhine–Westphalia, Cologne (approximate)"
+    },
+    {
+      "id": "22_strasbourg_000001_054275_leftImg8bit",
+      "path": "examples/22_strasbourg_000001_054275_leftImg8bit",
+      "thumbnail": "examples/22_strasbourg_000001_054275_leftImg8bit/original.jpg",
+      "image_id": "strasbourg_000001_054275_leftImg8bit",
+      "clue_count": 4,
+      "region": "France, Grand Est, Strasbourg"
+    },
+    {
+      "id": "23_strasbourg_000000_023854_leftImg8bit",
+      "path": "examples/23_strasbourg_000000_023854_leftImg8bit",
+      "thumbnail": "examples/23_strasbourg_000000_023854_leftImg8bit/original.jpg",
+      "image_id": "strasbourg_000000_023854_leftImg8bit",
+      "clue_count": 6,
+      "region": "France, Grand Est, Strasbourg"
+    },
+    {
+      "id": "24_erfurt_000016_000019_leftImg8bit",
+      "path": "examples/24_erfurt_000016_000019_leftImg8bit",
+      "thumbnail": "examples/24_erfurt_000016_000019_leftImg8bit/original.jpg",
+      "image_id": "erfurt_000016_000019_leftImg8bit",
+      "clue_count": 3,
+      "region": "Germany, Thuringia, Erfurt"
+    },
+    {
+      "id": "25_erfurt_000059_000019_leftImg8bit",
+      "path": "examples/25_erfurt_000059_000019_leftImg8bit",
+      "thumbnail": "examples/25_erfurt_000059_000019_leftImg8bit/original.jpg",
+      "image_id": "erfurt_000059_000019_leftImg8bit",
+      "clue_count": 5,
+      "region": "Germany, Thuringia, Jena"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "23_strasbourg_000000_023854_leftImg8bit",
+  "image_id": "strasbourg_000000_023854_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.583,
+    "longitude": 7.745,
+    "confidence": "Low",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "reasoning": "Country-level: The scene shows right-hand driving with solid/dashed white lane lines, shark-tooth yield triangles at a side entry, and a compact urban bridge with closely spaced spherical globe street lamps. The stacked white directional sign panels with black borders and narrow fonts on a single gray post match French road-sign design more than neighboring Germany/Switzerland (which commonly use different fonts, panel proportions, and mounting). The cobblestone-edged curb and metal bridge railing style are also typical in French cities. These cues steer me toward France rather than Germany, Netherlands, or Switzerland.\nCity-level: The architecture suggests northeastern France: a mix of postwar mid-rise slabs and newer banded-cladding office blocks, common in Alsace. The globe lamps lining a bridge and the metal railing resemble several bridges over the Ill in Strasbourg. Directional sign stacks on gray posts and the urban density fit Strasbourg more than smaller Alsatian towns. No unique landmark contradicts Strasbourg; alternatives like Mulhouse/Metz are plausible but the bridge lighting and railing pattern are more characteristic of Strasbourg’s inner bridges.\nStreet-level: The specific combination of a curving bridge approach, continuous metal balustrade, closely spaced spherical lamps on tall poles, and a side slip road with yield triangles narrows to an inner-city bridge segment rather than a generic street. The large slab apartment block beyond the trees and the modern banded office block at the left edge further distinguish this particular bridge approach among Strasbourg’s crossings.\nOverall, while not uniquely identifiable, the strongest consistent cues point to Strasbourg, France, on a bridge over the Ill near mixed residential/office blocks.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white street sign on a gray pole",
+      "geolocation_element": "stacked rectangular direction panels with thin black borders and narrow typeface typical of French directional signage",
+      "target_concept": "street sign",
+      "level": "country",
+      "mask": "masks/white_street_sign_on_a_gray_pole_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "round street lamp on a tall pole",
+      "geolocation_element": "series of spherical globe lamps lining a bridge, a style common on Strasbourg bridges",
+      "target_concept": "street lamp",
+      "level": "city",
+      "mask": "masks/round_street_lamp_on_a_tall_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "metal bridge railing along the roadway",
+      "geolocation_element": "urban bridge balustrade indicating a river crossing typical of Strasbourg’s inner-city bridges",
+      "target_concept": "bridge railing",
+      "level": "city",
+      "mask": "masks/metal_bridge_railing_along_the_roadway_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "cobblestone curb at the corner",
+      "geolocation_element": "stone curb edging common in older French urban streets",
+      "target_concept": "curb",
+      "level": "country",
+      "mask": "masks/cobblestone_curb_at_the_corner_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "banded office building at the left side",
+      "geolocation_element": "post-1970s office architecture typical in Strasbourg business districts",
+      "target_concept": "building",
+      "level": "city",
+      "mask": "masks/banded_office_building_at_the_left_side_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "slab apartment building in the background",
+      "geolocation_element": "postwar French residential slab style prevalent in northeastern French cities",
+      "target_concept": "building",
+      "level": "country",
+      "mask": "masks/slab_apartment_building_in_the_background_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

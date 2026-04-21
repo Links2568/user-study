@@ -1,0 +1,53 @@
+{
+  "id": "04_tubingen_000142_000019_leftImg8bit",
+  "image_id": "tubingen_000142_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 47.999,
+    "longitude": 7.842,
+    "confidence": "Medium",
+    "region": "Germany, Baden-Württemberg, Freiburg im Breisgau"
+  },
+  "reasoning": "Country level: The scene shows European road design: a triangular red‑border yield sign, blue circular mandatory-direction sign, dead‑end sign, and a red‑white chevron bollard. The typography, sign shapes, and pavement markings match German standards. The partially visible grocery storefront shows the red 'REWE' branding, a common German supermarket chain. A white directional sign clearly contains the German word 'Zentrum' (city center). These cues collectively indicate Germany and rule out neighboring countries with differing sign conventions and languages (e.g., France/Switzerland using different fonts and fewer chevron bollards of this style).  City level: The white directional sign appears to list a district name that looks like 'Herdern' with an arrow, alongside 'Zentrum'. Herdern is a well‑known district of Freiburg im Breisgau. Freiburg also commonly has REWE stores embedded in residential blocks like this and tree‑lined low‑rise quarters near Herdern and the city center. This combination (district name consistent with Freiburg and 'Zentrum' pointing another way) narrows the location toward Freiburg over other German cities.  Street level: The specific corner features a small triangular traffic island with a yield sign, a right‑turn‑only blue sign, and a red‑white chevron bollard at the edge of a curved lane. On the right, a REWE sign sits on the ground floor of a white building with garden plantings (including tall sunflowers) along a hedge above a low stone wall. On the left, a short pole carries a dead‑end sign just before a blocky beige residential building; a bicycle rack and a scooter are at the base. This distinctive cluster of signage at a right‑curving junction toward 'Zentrum', adjacent to a REWE in a white corner building, characterizes this particular street segment near the Herdern–Zentrum approach in Freiburg.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "white directional sign on a pole",
+      "geolocation_element": "German language text including 'Zentrum' and a district name resembling 'Herdern'",
+      "target_concept": "directional sign",
+      "level": "country",
+      "mask": "masks/white_directional_sign_on_a_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "red-white chevron bollard at the curb",
+      "geolocation_element": "German-style hazard marker pattern and placement",
+      "target_concept": "chevron bollard",
+      "level": "country",
+      "mask": "masks/red-white_chevron_bollard_at_the_curb_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "blue right-turn sign on a pole",
+      "geolocation_element": "German mandatory-direction signage convention",
+      "target_concept": "right-turn sign",
+      "level": "country",
+      "mask": "masks/blue_right-turn_sign_on_a_pole_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "white street name sign on a pole",
+      "geolocation_element": "German street-name plate style and potential German text",
+      "target_concept": "street name sign",
+      "level": "country",
+      "mask": "masks/white_street_name_sign_on_a_pole_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

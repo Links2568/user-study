@@ -1,0 +1,53 @@
+{
+  "id": "03_darmstadt_000049_000019_leftImg8bit",
+  "image_id": "darmstadt_000049_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.4818,
+    "longitude": 7.2162,
+    "confidence": "Low",
+    "region": "Germany, North Rhine-Westphalia, Bochum (approximate)"
+  },
+  "reasoning": "Country level: The cars have long, rectangular EU-style front license plates and drive on the right. Multiple standardized German features are visible: a yellow rectangular directional road sign, a blue P parking sign style, and shop/brand text in German (“Schlund”). The street carries embedded tram tracks with catenary wires, common in many German cities. Together these cues point strongly to Germany rather than neighboring countries (e.g., France uses different directional sign colors; the Netherlands rarely uses yellow for direction signs; UK would be left‑hand traffic).\nCity level: The presence of in-street tram tracks and dense prewar/postwar mid-rise blocks suggests a mid-to-large German city with a tram network, typical of North Rhine-Westphalia, Hesse, Baden‑Württemberg, Bavaria, etc. The pub sign resembles German beer branding and the overall Ruhrgebiet-style mixed stucco facades fit many cities like Bochum, Essen, Dortmund, or Duisburg. No landmark uniquely identifies one city, but the Ruhr architectural feel and commercial-residential mix are consistent with Bochum/Essen corridors.\nStreet level: Specific storefront names (“Schlund”) and the hanging pub sign on the right, plus the pattern of double tram tracks centered with a protected bike lane peel-off, the overhead center-hung traffic light, and the sequence of midrise facades form a distinctive block. These elements would help match to a particular corridor in map imagery within the inferred city but are not uniquely conclusive without readable addresses.\nOverall, Germany is well supported; narrowing to a specific Ruhr city is plausible but uncertain. The exact street remains uncertain; the listed storefronts and signs would be the key street-level differentiators for confirmation.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "red shop sign above a storefront",
+      "geolocation_element": "German-language text “SCHLUND”",
+      "target_concept": "shop sign",
+      "level": "country",
+      "mask": "masks/red_shop_sign_above_a_storefront_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "tram tracks in the roadway",
+      "geolocation_element": "presence of an active on-street tram system typical of many German cities",
+      "target_concept": "tram tracks",
+      "level": "city",
+      "mask": "masks/tram_tracks_in_the_roadway_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "overhead catenary wires above the street",
+      "geolocation_element": "electric tram/bus catenary typical of German tram networks",
+      "target_concept": "catenary wires",
+      "level": "city",
+      "mask": "masks/overhead_catenary_wires_above_the_street_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "oval pub sign on a wall",
+      "geolocation_element": "German beer brand styling typical of local pubs",
+      "target_concept": "pub sign",
+      "level": "city",
+      "mask": "masks/oval_pub_sign_on_a_wall_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

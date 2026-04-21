@@ -1,0 +1,53 @@
+{
+  "id": "15_strasbourg_000000_018153_leftImg8bit",
+  "image_id": "strasbourg_000000_018153_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.5796,
+    "longitude": 7.7366,
+    "confidence": "Medium",
+    "region": "France, Grand Est, Strasbourg (Petite France / Ponts Couverts)"
+  },
+  "reasoning": "Country level: The scene shows European-style road markings (solid white edge line), EU-style circular traffic signs on slender poles, and dense flower boxes on a bridge. Building details include white facades with wooden shutters and a prominent medieval stone tower. The blue rectangular street plates with white text are typical in France, and the architecture (half‑timbered roofline at left and Alsatian shutters) strongly suggests northeastern France (Alsace) rather than Germany or Switzerland due to the specific French street plates and shop signage.\nCity level: Within France, the Alsatian mix of half‑timbering, steep tiled roofs, and riverside bridges with abundant flower boxes is characteristic of Strasbourg’s Petite France district. The large rectangular medieval defensive tower at the end of a short bridge is highly distinctive of the Ponts Couverts ensemble in Strasbourg, which features multiple stone towers flanking bridges over the Ill River. Nearby cities like Colmar or Mulhouse have similar timbered houses but lack this specific configuration of multiple river bridges with tall square towers within such dense urban fabric.\nStreet level: The bridge has green metal railings covered with cascading flowers and a narrow carriageway leading directly to a tall rectangular stone tower with a single slit window; on the right, mixed-use buildings with continuous balconies and shutters face the water. A blue street plate is mounted near the tower, and a small shop sign with the word beginning “PONT…” appears on the right facade—consistent with businesses around the Ponts Couverts. These elements together uniquely indicate one of the short approach bridges to the Ponts Couverts towers in Strasbourg’s Petite France area rather than other Strasbourg bridges lacking adjacent medieval towers.\n",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue street sign on a wall",
+      "geolocation_element": "French-style street plate format, French language text",
+      "target_concept": "street sign",
+      "level": "country",
+      "mask": "masks/blue_street_sign_on_a_wall_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "stone tower building at the end of the bridge",
+      "geolocation_element": "medieval defensive tower characteristic of Ponts Couverts",
+      "target_concept": "tower building",
+      "level": "city",
+      "mask": "masks/stone_tower_building_at_the_end_of_the_bridge_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "half-timber house roof at the upper left",
+      "geolocation_element": "Alsatian half-timber architectural style",
+      "target_concept": "house roof",
+      "level": "country",
+      "mask": "masks/half-timber_house_roof_at_the_upper_left_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "bridge railing with flowers on the right side",
+      "geolocation_element": "Strasbourg civic habit of decorating bridge railings with flowers",
+      "target_concept": "bridge railing",
+      "level": "city",
+      "mask": "masks/bridge_railing_with_flowers_on_the_right_side_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "05_dusseldorf_000083_000019_leftImg8bit",
+  "image_id": "dusseldorf_000083_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.2255,
+    "longitude": 6.7833,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine–Westphalia, Düsseldorf (near Berliner Allee and Oststraße)"
+  },
+  "reasoning": "Country-level: The scene shows multiple German-language signs such as “Gerüstbau” and bank branding consistent with “Deutsche Bank.” There is a yellow circular “H” tram/bus stop sign, a standard German public-transport icon. Vehicles carry white EU-style plates with the German font and spacing. Road markings (white hatchings and lane arrows) and the extensive tram overhead catenary are typical for Germany. These cues collectively point strongly to Germany and away from neighboring countries with different transit signage (e.g., France uses different stop symbols, the UK has different plates and drives on the left).\nCity-level: The rear license plate on the silver Mercedes begins with “D-…,” the city code for Düsseldorf. The white/grey low-floor tram matches Rheinbahn rolling stock used in Düsseldorf, and a blue square “U” sign indicates a Stadtbahn/U‑Bahn stop, which Düsseldorf has. Combining the “D-” plate frequency in frame, Rheinbahn-style tram, and dense city-center office blocks suggests central Düsseldorf rather than other German cities with similar features (e.g., Frankfurt or Cologne have different plate prefixes and tram liveries).\nStreet-level: The wide multi-lane boulevard with central tram tracks, complex catenary web, and presence of a Deutsche Bank corner branch plus a U‑Bahn entrance sign fits central Düsseldorf corridors like Berliner Allee with intersecting routes and surface trams. The urban canyon of mid-rise modernist offices and scaffolding with local contractor signage further narrows to a core commercial intersection along Berliner Allee near Oststraße, where tram lines converge and U‑stations sit at corners.\nStep-by-step elimination: Non-German options were excluded by the German language signage, plate format, and transit icons. Within Germany, Cologne/Frankfurt were excluded by plate prefixes and tram appearance. Within Düsseldorf, the combination of multi-track junction, U‑sign, and commercial bank corner suggests the Berliner Allee–Oststraße area rather than residential corridors or the Königsallee luxury frontage.",
+  "clues": [
+    {
+      "id": "clue_3",
+      "object_description": "rectangular bank sign above windows",
+      "geolocation_element": "text and branding styled as 'Deutsche Bank' indicating German language and common national bank branch",
+      "target_concept": "bank sign",
+      "level": "country",
+      "mask": "masks/rectangular_bank_sign_above_windows_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "scaffolding banner on a building",
+      "geolocation_element": "German words 'Gerüstbau' and company name indicating German language and local contractor",
+      "target_concept": "banner",
+      "level": "country",
+      "mask": "masks/scaffolding_banner_on_a_building_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_7",
+      "object_description": "overhead wire above the intersection",
+      "geolocation_element": "dense tram catenary indicating a tram junction typical of Düsseldorf city center",
+      "target_concept": "overhead wire",
+      "level": "city",
+      "mask": "masks/overhead_wire_above_the_intersection_mask.png",
+      "color": "#4a6f5c"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "08_hanover_000000_034141_leftImg8bit",
+  "image_id": "hanover_000000_034141_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 53.572,
+    "longitude": 10.039,
+    "confidence": "Medium",
+    "region": "Germany, Hamburg, Hamburg"
+  },
+  "reasoning": "Country: The scene shows EU-style white license plates with blue EU bands, right-hand traffic, German-language text on the bus headsign reading “Betriebsfahrt” and a street placard abbreviated “Str.” These combine with German-style traffic lights, blue mandatory-direction sign, and a red-asphalt bicycle crossing to strongly indicate Germany while ruling out nearby countries (e.g., Dutch plates and signage would differ; Austria/Switzerland use different plate formats and some different signal housings). \nCity: A readable license plate on a front-facing car appears to begin with “HH,” the code for Hamburg. The small pole-mounted street placard reads “Celler Str.”, a street that exists in multiple German cities, but the co-occurrence with an HH-coded vehicle and the typical all-white city buses with large ad wraps aligns with Hamburg’s bus fleet style more than with Hannover/Braunschweig (which often show distinct operator liveries). Thus Hamburg is favored. \nStreet: The sign “Celler Str.” narrows to that named street. The wide multi-lane junction with a central red cycle crossing, curved cobbled corner, modern office block with horizontal fins on the far left, and a tree-lined edge on the right describe a specific intersection context along Celler Straße in Hamburg. While the exact cross street is not legible, these combined cues are sufficient to approximate a segment of Celler Straße in Hamburg rather than another city’s Celler Straße.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white bus destination sign at the front of a white bus",
+      "geolocation_element": "German word 'Betriebsfahrt' on the destination display",
+      "target_concept": "bus destination sign",
+      "level": "country",
+      "mask": "masks/white_bus_destination_sign_at_the_front_of_a_white_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "white street sign on a gray pole",
+      "geolocation_element": "text 'Celler Str.' indicating a specific street name in German",
+      "target_concept": "street sign",
+      "level": "city",
+      "mask": "masks/white_street_sign_on_a_gray_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "white license plate on a black hatchback",
+      "geolocation_element": "prefix letters resembling 'HH' indicating Hamburg registration",
+      "target_concept": "license plate",
+      "level": "city",
+      "mask": "masks/white_license_plate_on_a_black_hatchback_mask.png",
+      "color": "#8ba867"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "24_erfurt_000016_000019_leftImg8bit",
+  "image_id": "erfurt_000016_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 50.978,
+    "longitude": 11.03,
+    "confidence": "Medium",
+    "region": "Germany, Thuringia, Erfurt"
+  },
+  "reasoning": "Country level: The road furniture and traffic control devices are European: blue circular prohibition signs with a red X (no stopping), narrow dashed lane markings, and EU-style white license plates with a blue band. The license plates use Germany’s DIN/FE-Schrift and spacing, strongly indicating Germany. Architectural style on the right shows late-19th-century brick Gründerzeit apartment blocks, common in many German cities. City level: The rear plate on the white Volkswagen shows the prefix “EF …”, which is the vehicle registration code for Erfurt (Thuringia). This sharply narrows the likely city to Erfurt rather than other German cities. Other cues (tree-lined boulevard with a long green verge/park on the left and continuous historic blocks on the right) are consistent with several Erfurt inner-ring/edge-of-old-town avenues. Street level: The scene shows a two-lane urban carriageway with on-street parking on the right, a continuous grass park strip with mature trees on the left, and repeated no-stopping signage near driveways. The combination of a historic brick facade row, parallel parking bays, and a broad park verge suggests a perimeter boulevard near central Erfurt, though the exact street name cannot be read. These elements distinguish it from narrower medieval-core streets and more modern arterial roads elsewhere in the city.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white license plate on a white car at the right lane",
+      "geolocation_element": "German FE-Schrift font, blue EU band with country code, city code prefix 'EF' indicating Erfurt",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_white_car_at_the_right_la_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "round no-stopping sign on a metal pole by the curb",
+      "geolocation_element": "European no-stopping symbol, German-style mounting with a white rectangular supplementary plaque below",
+      "target_concept": "sign",
+      "level": "country",
+      "mask": "masks/round_no-stopping_sign_on_a_metal_pole_by_the_curb_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "rectangular supplementary sign under the no-stopping sign",
+      "geolocation_element": "German-style Zusatzschild format commonly used under prohibition signs",
+      "target_concept": "sign",
+      "level": "country",
+      "mask": "masks/rectangular_supplementary_sign_under_the_no-stoppi_mask.png",
+      "color": "#c47f86"
+    }
+  ]
+}

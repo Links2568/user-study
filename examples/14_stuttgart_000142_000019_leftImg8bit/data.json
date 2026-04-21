@@ -1,0 +1,62 @@
+{
+  "id": "14_stuttgart_000142_000019_leftImg8bit",
+  "image_id": "stuttgart_000142_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.7729,
+    "longitude": 9.1635,
+    "confidence": "High",
+    "region": "Germany, Baden-Württemberg, Stuttgart (Rosenbergstraße area)"
+  },
+  "reasoning": "Country level: The traffic signs follow European conventions (red-bordered circular speed sign, blue parking sign). The speed sign reads “30 ZONE,” a layout and wording characteristic of Germany’s Zone 30 signage. The street name plate uses the German abbreviation “-str.” (for Straße). Vehicles have EU-format plates consistent with German typography. These cues point strongly to Germany and rule out neighboring countries with different zone-sign wording (e.g., “Zona” in Italy or “Zone 30” layouts used elsewhere).\nCity level: The street name visible is “Rosenbergstr.” This is a well-known street name in Stuttgart. The hilly background with densely packed houses matches Stuttgart’s basin/hills topography. Overhead traction wires indicate a tram/light-rail corridor common in Stuttgart’s inner districts. Together, “Rosenbergstr.” plus the terrain and tram infrastructure strongly indicate Stuttgart, Baden‑Württemberg.\nStreet level: The scene shows an intersection on Rosenbergstraße with a posted 30 km/h zone, a blue parking sign with a German supplementary plate, and a distinctive brown sandstone corner building with carved reliefs. The combination of the Rosenbergstraße wall plate, the tram/overhead wires along the corridor, and the uphill view with tightly spaced midrise blocks narrows it to Rosenbergstraße in Stuttgart‑West. Exact cross street is harder to read, but the features fit the central-west segments of Rosenbergstraße near several side streets.\nOverall, these cues allow precise placement in Stuttgart, specifically along Rosenbergstraße, with high confidence.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "blue street sign on a wall",
+      "geolocation_element": "text 'Rosenbergstr.' with German '-str.' abbreviation",
+      "target_concept": "street sign",
+      "level": "city",
+      "mask": "masks/blue_street_sign_on_a_wall_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "round speed limit sign on a pole",
+      "geolocation_element": "text '30' with separate white rectangular 'ZONE' plate below, German Zone 30 design",
+      "target_concept": "speed limit sign",
+      "level": "country",
+      "mask": "masks/round_speed_limit_sign_on_a_pole_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "white license plate on a silver van",
+      "geolocation_element": "EU band with country code 'D' and German plate format with city code and hyphen",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_silver_van_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "overhead trolley wire across the street",
+      "geolocation_element": "presence of tram/trolley infrastructure consistent with Stuttgart inner-city streets",
+      "target_concept": "trolley wire",
+      "level": "city",
+      "mask": "masks/overhead_trolley_wire_across_the_street_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "brown stone building at the corner",
+      "geolocation_element": "prewar German urban tenement style common in Stuttgart‑West",
+      "target_concept": "building",
+      "level": "city",
+      "mask": "masks/brown_stone_building_at_the_corner_mask.png",
+      "color": "#6e5b8c"
+    }
+  ]
+}

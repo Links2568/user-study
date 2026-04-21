@@ -1,0 +1,44 @@
+{
+  "id": "07_erfurt_000016_000019_leftImg8bit",
+  "image_id": "erfurt_000016_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 50.978,
+    "longitude": 11.032,
+    "confidence": "Medium",
+    "region": "Germany, Thuringia, Erfurt"
+  },
+  "reasoning": "Country-level: The scene shows right-hand traffic with EU-style blue-banded license plates. The regulatory “no stopping” sign is the German design (red X on blue circle with thin white border and a small rectangular supplementary plate beneath). Buildings have late-19th-century German Gründerzeit red-brick facades with white stone trim. These cues collectively point strongly to Germany, ruling out neighboring countries with different sign styles (e.g., France’s thicker-bordered sign variants) or left-hand traffic countries. \nCity-level: The rear license plate on the white Volkswagen clearly begins with “EF,” which is the German vehicle registration code for Erfurt (Thuringia). That, combined with architecture typical for Erfurt’s historic neighborhoods and a broad green belt along a ring-like arterial, narrows the city to Erfurt rather than other German cities. \nStreet-level: The roadway runs alongside a continuous park-like green strip on the left and a row of ornate red-brick tenements on the right, with parallel parking bays and standard German curb geometry. The combination of a linear green belt and Gründerzeit blocks matches inner Erfurt ring/edge streets. While the exact street name is not directly readable, the distinctive pairing of a park strip on one side and dense historic brick facades with frequent no-stopping zones on the other characterizes segments of central Erfurt’s inner-ring corridors. These features distinguish this street from more commercial boulevards or fully enclosed residential streets elsewhere in the city.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "blue no stopping sign on a pole at the right curb",
+      "geolocation_element": "German-style sign design and proportions, supplementary white text plate beneath typical for German signage",
+      "target_concept": "sign",
+      "level": "country",
+      "mask": "masks/blue_no_stopping_sign_on_a_pole_at_the_right_curb_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "green park lawn with tall trees on the left side",
+      "geolocation_element": "linear green belt adjacent to an inner-city arterial typical of Erfurt’s inner-ring layout",
+      "target_concept": "lawn",
+      "level": "city",
+      "mask": "masks/green_park_lawn_with_tall_trees_on_the_left_side_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "gray curb edge along the roadway center-left",
+      "geolocation_element": "German curb and drainage seam style seen on many German urban streets",
+      "target_concept": "curb",
+      "level": "country",
+      "mask": "masks/gray_curb_edge_along_the_roadway_center-left_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

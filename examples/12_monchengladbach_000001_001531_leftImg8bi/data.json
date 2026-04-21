@@ -1,0 +1,53 @@
+{
+  "id": "12_monchengladbach_000001_001531_leftImg8bi",
+  "image_id": "monchengladbach_000001_001531_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.2,
+    "longitude": 6.44,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine–Westphalia, Mönchengladbach"
+  },
+  "reasoning": "Country-level: The vehicles drive on the right with European-style dashed lane markings. The rear car has an EU license plate with the blue band and a German-format plate (city code, dash, letters, numbers). Road signs, curb stones, and the no-stopping sign style match Germany. The restaurant fascia reads “China-Restaurant Pavillon,” a German-language term and typography commonly seen in Germany. These cues point strongly to Germany over neighboring countries.\nCity-level: The license plate on the orange hatchback begins with “MG,” the German registration code for Mönchengladbach (North Rhine–Westphalia). While a car could be out of district, the prevalence of local plates in everyday street scenes makes this a strong city clue. The brick architecture and street furniture (arched street lamps typical in NRW municipalities) are consistent with the region, supporting Mönchengladbach rather than other MG-like codes in different countries (none apply).\nStreet-level: The scene shows a distinctive corner brick building with a curved white fascia bearing the name “China-Restaurant Pavillon,” multiple wall-mounted menu cases, and a small tree in a metal guard on the sidewalk. The roadway bends gently left with a narrow median curb at the right edge and tall arched lamps lining the street. These elements—corner restaurant signage, facade details, and the specific lamp/curb arrangement—help distinguish this particular street segment within Mönchengladbach.\nOverall, the German plate (MG) provides the decisive city cue; other signage and urban details corroborate.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white license plate on an orange car",
+      "geolocation_element": "EU blue band with circle of stars, German plate format, city code 'MG'",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_an_orange_car_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "rectangular shop sign above a door",
+      "geolocation_element": "text 'China-Restaurant Pavillon' in German, Latin alphabet",
+      "target_concept": "shop sign",
+      "level": "country",
+      "mask": "masks/rectangular_shop_sign_above_a_door_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "arched street lamp on a sidewalk",
+      "geolocation_element": "lamp design common in German/NRW municipalities",
+      "target_concept": "street lamp",
+      "level": "country",
+      "mask": "masks/arched_street_lamp_on_a_sidewalk_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "brick building facade at a corner",
+      "geolocation_element": "Central European brick commercial architecture typical of western Germany",
+      "target_concept": "building facade",
+      "level": "country",
+      "mask": "masks/brick_building_facade_at_a_corner_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

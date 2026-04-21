@@ -1,0 +1,62 @@
+{
+  "id": "10_zurich_000079_000019_leftImg8bit",
+  "image_id": "zurich_000079_000019_leftImg8bit",
+  "image": "original.jpg",
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 47.3709,
+    "longitude": 8.5396,
+    "confidence": "Medium",
+    "region": "Switzerland, Zürich, Zürich (near Paradeplatz/Bahnhofstrasse)"
+  },
+  "reasoning": "Country-level: The scene shows right-hand traffic, dense tram infrastructure (dual rails and overhead catenary), and bright yellow zebra crossings. A black–yellow striped median bollard and a referendum-style poster with the German word “ja” are visible. In German-speaking Europe, only Switzerland commonly uses yellow pedestrian crossings and these distinctive black–yellow bollards. This steers strongly toward Switzerland and away from Germany/Austria (which use white crossings and different bollards). Architectural style (historic stone buildings with clean façades) and compact tram-centric street design also fit Switzerland.\nCity-level: The skyline features a tall, slender church clock tower with a pointed spire—very similar to Zürich’s Fraumünster/St. Peter ensemble. The urban core shows upscale retail (international outdoor brand storefront) along a tram street, consistent with Zürich’s Bahnhofstrasse area. We can rule out Bern (arcaded streets), Basel (Rhine embankment vistas and different tower profiles), and Geneva (Francophone signage expected). The mix of heavy tram wiring, central business signage, and the iconic clock-spired church suggests central Zürich near the Limmat.\nStreet-level: The view aligns with a broad tram corridor lined by high-end shops, a median with black–yellow bollard, and a vista toward the clock-spired church, matching approaches to Paradeplatz/Bahnhofstrasse where Fraumünster’s spire is visible down intersecting streets. The presence of a specific outdoor brand shop front and corporate signage further narrows to the Bahnhofstrasse–Paradeplatz vicinity rather than smaller side streets.\nConclusion: Central Zürich, around Bahnhofstrasse near Paradeplatz, with the church spire (likely Fraumünster) visible ahead.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "black-yellow bollard on a median",
+      "geolocation_element": "black and yellow hazard striping pattern common on Swiss medians",
+      "target_concept": "bollard",
+      "level": "country",
+      "mask": "masks/black-yellow_bollard_on_a_median_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "church clock tower with a pointed spire in the distance",
+      "geolocation_element": "large facade clock on a slender spire resembling Zürich’s Fraumünster/St. Peter style",
+      "target_concept": "clock tower",
+      "level": "city",
+      "mask": "masks/church_clock_tower_with_a_pointed_spire_in_the_dis_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "tram tracks on the road surface",
+      "geolocation_element": "extensive on-street tram network characteristic of Swiss cities like Zürich",
+      "target_concept": "tram tracks",
+      "level": "country",
+      "mask": "masks/tram_tracks_on_the_road_surface_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "rectangular shop sign above a storefront",
+      "geolocation_element": "brand name text 'THE NORTH FACE' indicating upscale retail corridor like Bahnhofstrasse",
+      "target_concept": "shop sign",
+      "level": "city",
+      "mask": "masks/rectangular_shop_sign_above_a_storefront_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "traffic light at the intersection",
+      "geolocation_element": "European-style signal design used in Switzerland with compact heads at tram intersections",
+      "target_concept": "traffic light",
+      "level": "country",
+      "mask": "masks/traffic_light_at_the_intersection_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}
