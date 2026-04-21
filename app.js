@@ -8,7 +8,7 @@ const state = {
   activeClueId: null,
   stickyClue: null,
   showAll: false,
-  overlayAlpha: 0.7,
+  overlayAlpha: 0.8,
 };
 
 const el = {
@@ -192,7 +192,7 @@ function updateOverlayLayers() {
     layer.style.inset = '0';
     layer.style.background = c.color;
     layer.style.opacity = String(state.overlayAlpha);
-    layer.style.mixBlendMode = 'multiply';
+    layer.style.mixBlendMode = 'hard-light';
     const url = `url("${path}/${c.mask}")`;
     layer.style.webkitMaskImage = url;
     layer.style.maskImage = url;
@@ -204,6 +204,9 @@ function updateOverlayLayers() {
     // treat them as fully opaque. Use luminance so white=show, black=hide.
     layer.style.maskMode = 'luminance';
     layer.style.webkitMaskSourceType = 'luminance';
+    // Colored halo tracing the mask edge — makes selection obvious even on
+    // low-contrast regions where the tint alone blends in.
+    layer.style.filter = `drop-shadow(0 0 3px ${c.color}) drop-shadow(0 0 10px ${c.color})`;
     el.stageOverlay.appendChild(layer);
   });
 }
