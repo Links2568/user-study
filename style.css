@@ -1,16 +1,16 @@
-/* -------- 和色 palette (warm washi) -------- */
+/* -------- palette (warm washi) -------- */
 :root {
-  --paper:       #f5ecdc;   /* 生成り kinari */
-  --paper-soft:  #fbf5e9;   /* 胡粉 gofun */
-  --paper-warm:  #efe3c9;   /* 象牙 zouge */
+  --paper:       #f5ecdc;   /* kinari */
+  --paper-soft:  #fbf5e9;   /* gofun */
+  --paper-warm:  #efe3c9;   /* zouge */
   --paper-edge:  #d9c8a5;   /* muted border */
-  --sumi:        #342a24;   /* 墨 warm ink */
+  --sumi:        #342a24;   /* warm ink */
   --sumi-soft:   #594a40;   /* faded ink */
-  --muted:       #8a7868;   /* 鈍色 donburi */
-  --accent:      #c75b3f;   /* 朱 shu (persimmon) */
+  --muted:       #8a7868;   /* donburi */
+  --accent:      #c75b3f;   /* shu (persimmon) */
   --accent-soft: #e6a08c;
-  --indigo:      #4a6f84;   /* 納戸 nando */
-  --matcha:      #7c945a;   /* 抹茶 */
+  --indigo:      #4a6f84;   /* nando */
+  --matcha:      #7c945a;   /* matcha */
   --shadow:      0 2px 6px rgba(82, 58, 40, 0.08),
                  0 8px 24px rgba(82, 58, 40, 0.10);
 }
