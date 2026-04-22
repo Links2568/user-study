@@ -40,12 +40,36 @@ fetch('index.json')
     state.samples = idx.samples || [];
     el.sampleCount.textContent = `${state.samples.length} total`;
     renderStrip();
-    if (state.samples.length) loadSample(state.samples[0]);
+    const fromUrl = pickSampleFromUrl();
+    const initial = fromUrl || state.samples[0];
+    // Don't push history on the initial load — leave /user-study/ alone,
+    // and for /user-study/<N> the URL is already correct.
+    if (initial) loadSample(initial, { pushUrl: false });
   })
   .catch(() => {
     el.reasoningText.textContent =
       'Failed to load index.json — serve this folder via a local HTTP server or GitHub Pages (not file://).';
   });
+
+window.addEventListener('popstate', () => {
+  const s = pickSampleFromUrl();
+  if (s) loadSample(s, { pushUrl: false });
+});
+
+// Pick the sample named by the URL tail, if any.
+// /user-study/        -> null (default to first)
+// /user-study/3       -> samples[2]                (1-based index)
+// /user-study/03_input_image -> match by id
+function pickSampleFromUrl() {
+  const segs = window.location.pathname.split('/').filter(Boolean);
+  const last = segs[segs.length - 1] || '';
+  if (!last) return null;
+  const n = parseInt(last, 10);
+  if (!isNaN(n) && String(n) === last && n >= 1 && n <= state.samples.length) {
+    return state.samples[n - 1];
+  }
+  return state.samples.find(s => s.id === decodeURIComponent(last)) || null;
+}
 
 function renderStrip() {
   el.thumbStrip.innerHTML = '';
@@ -71,11 +95,23 @@ function markActiveThumb(id) {
 }
 
 // ---------- sample load ----------
-function loadSample(sampleMeta) {
+function loadSample(sampleMeta, opts) {
   markActiveThumb(sampleMeta.id);
   state.currentPath = sampleMeta.path;
   state.activeClueId = null;
   state.stickyClue = null;
+
+  // Reflect selection in URL (relative-to-current-path, so it works both
+  // at /user-study/ and at /user-study/<N>).
+  if ((!opts || opts.pushUrl !== false) && window.history && history.pushState) {
+    const idx = state.samples.indexOf(sampleMeta);
+    if (idx >= 0) {
+      const base = window.location.pathname.endsWith('/')
+        ? window.location.pathname
+        : window.location.pathname.replace(/\/[^\/]*$/, '/');
+      history.pushState({ id: sampleMeta.id }, '', base + (idx + 1));
+    }
+  }
 
   fetch(`${sampleMeta.path}/data.json`)
     .then(r => r.json())
