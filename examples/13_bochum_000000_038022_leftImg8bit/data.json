@@ -2,6 +2,7 @@
   "id": "13_bochum_000000_038022_leftImg8bit",
   "image_id": "bochum_000000_038022_leftImg8bit",
   "image": "original.jpg",
+  "modified_image": null,
   "width": 1600,
   "height": 800,
   "ground_truth": null,

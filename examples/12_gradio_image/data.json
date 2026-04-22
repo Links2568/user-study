@@ -1,0 +1,57 @@
+{
+  "id": "12_gradio_image",
+  "image_id": "gradio_image",
+  "image": "original.jpg",
+  "modified_image": "modified.jpg",
+  "width": 480,
+  "height": 640,
+  "ground_truth": {
+    "lat": 53.5535,
+    "lon": 10.0027
+  },
+  "location_estimate": {
+    "latitude": 42.27814,
+    "longitude": -83.73504,
+    "confidence": "High",
+    "region": "United States, Michigan, Ann Arbor"
+  },
+  "reasoning": "The image captures a distinctive museum atrium featuring two large mastodon skeletons on the ground and two whale skeletons suspended from the ceiling. This specific display of two mastodons (a male and a female) is a hallmark of the University of Michigan Museum of Natural History. The modern architectural style, characterized by a multi-story atrium with glass-walled research laboratories overlooking the public space, is unique to the Biological Sciences Building at the University of Michigan in Ann Arbor. The presence of both the terrestrial mastodon skeletons and the aquatic prehistoric whale skeletons (Basilosaurus and Dorudon) confirms the location to this specific institution. The layout of the stairs and the lighting further narrow the location to the museum's main entrance atrium.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "mastodon skeleton on the floor",
+      "geolocation_element": "signature mastodon exhibit at UM Museum of Natural History",
+      "target_concept": "skeleton",
+      "level": "city",
+      "mask": "masks/mastodon_skeleton_on_the_floor_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "whale skeleton hanging from the ceiling",
+      "geolocation_element": "prehistoric whale skeletons characteristic of UM collections",
+      "target_concept": "skeleton",
+      "level": "city",
+      "mask": "masks/whale_skeleton_hanging_from_the_ceiling_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "glass balcony on the upper floor",
+      "geolocation_element": "architectural style of the University of Michigan Biological Sciences Building",
+      "target_concept": "balcony",
+      "level": "street",
+      "mask": "masks/glass_balcony_on_the_upper_floor_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "staircase at the right side",
+      "geolocation_element": "interior layout of the Ann Arbor museum atrium",
+      "target_concept": "staircase",
+      "level": "street",
+      "mask": "masks/staircase_at_the_right_side_mask.png",
+      "color": "#c47f86"
+    }
+  ]
+}

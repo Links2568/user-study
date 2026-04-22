@@ -1,0 +1,48 @@
+{
+  "id": "10_gradio_image",
+  "image_id": "gradio_image",
+  "image": "original.jpg",
+  "modified_image": "modified.jpg",
+  "width": 640,
+  "height": 480,
+  "ground_truth": {
+    "lat": 53.5535,
+    "lon": 10.0027
+  },
+  "location_estimate": {
+    "latitude": 42.29218,
+    "longitude": -83.71575,
+    "confidence": "High",
+    "region": "Ann Arbor, Michigan, USA"
+  },
+  "reasoning": "The image captures a modern brick building with a distinctive white overhang and large glass window bays, set against a backdrop of snow and bare trees. The most definitive clue is the yellow parking sign on the left, which features the 'Block M' logo, a well-known symbol of the University of Michigan. This logo places the scene in Ann Arbor, Michigan. The sign also mentions 'AMP Park,' a mobile parking payment system used by the university. The specific architectural features of the building—namely the extensive white canopy and the brick facade with vertical window segments—match the North Campus Recreation Building (NCRB) at the University of Michigan. The presence of snow indicates a northern climate consistent with Michigan in winter. Combining these elements, we can pinpoint the location to the entrance area of the NCRB on the university's North Campus.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "yellow parking sign on a metal post",
+      "geolocation_element": "University of Michigan block M logo and reference to AMP Park parking system",
+      "target_concept": "parking sign",
+      "level": "city",
+      "mask": "masks/yellow_parking_sign_on_a_metal_post_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "brick building with a white canopy",
+      "geolocation_element": "Unique architectural design of the North Campus Recreation Building at U-M",
+      "target_concept": "building",
+      "level": "street",
+      "mask": "masks/brick_building_with_a_white_canopy_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "blue and yellow logo on a sign",
+      "geolocation_element": "Distinctive University of Michigan branding colors and symbol",
+      "target_concept": "logo",
+      "level": "city",
+      "mask": "masks/blue_and_yellow_logo_on_a_sign_mask.png",
+      "color": "#8ba867"
+    }
+  ]
+}

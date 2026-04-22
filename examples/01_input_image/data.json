@@ -1,0 +1,57 @@
+{
+  "id": "01_input_image",
+  "image_id": "input_image",
+  "image": "original.jpg",
+  "modified_image": "modified.jpg",
+  "width": 640,
+  "height": 480,
+  "ground_truth": {
+    "lat": 42.29491,
+    "lon": -83.720017
+  },
+  "location_estimate": {
+    "latitude": 42.2912,
+    "longitude": -83.7175,
+    "confidence": "High",
+    "region": "North America, USA, Michigan, Ann Arbor"
+  },
+  "reasoning": "The image contains several clear indicators of its location. Starting at the country level, the English language signage and architectural style of the brick buildings and modern extensions are typical of a North American university campus in a cold climate, evidenced by the snow. Moving to the city level, the yellow parking sign is a key identifier; it features the iconic maize and blue 'M' logo of the University of Michigan, along with the text 'UNIVERSITY OF MICHIGAN' and 'AMP Park', a parking system used by the university in Ann Arbor. Narrowing down to the street level, the architecture identifies the North Campus of the university. Specifically, the brick building with the distinctive white cantilevered canopy and large glass windows is Pierpont Commons. The presence of a solar-powered charging table is a specific amenity found in this plaza area. The view is looking southeast towards the north entrance of Pierpont Commons from the parking and bus drop-off zone.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "yellow parking sign on a metal post",
+      "geolocation_element": "University of Michigan block M logo and text",
+      "target_concept": "parking sign",
+      "level": "street",
+      "mask": "masks/yellow_parking_sign_on_a_metal_post_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "solar-powered table with a solar panel",
+      "geolocation_element": "specialized campus amenity found at University of Michigan North Campus",
+      "target_concept": "table",
+      "level": "street",
+      "mask": "masks/solar-powered_table_with_a_solar_panel_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "white canopy overhang on a pillar",
+      "geolocation_element": "distinctive architecture of Pierpont Commons",
+      "target_concept": "canopy",
+      "level": "street",
+      "mask": "masks/white_canopy_overhang_on_a_pillar_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "large glass windows on a brick building",
+      "geolocation_element": "characteristic building style of U-M North Campus",
+      "target_concept": "windows",
+      "level": "city",
+      "mask": "masks/large_glass_windows_on_a_brick_building_mask.png",
+      "color": "#c47f86"
+    }
+  ]
+}

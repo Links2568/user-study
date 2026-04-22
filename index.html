@@ -34,8 +34,14 @@
   <section class="viewer">
     <div class="stage-col">
       <div class="stage-wrap">
+        <div class="view-toggle" id="viewToggle" role="tablist">
+          <button class="view-btn active" data-view="original" role="tab">Before</button>
+          <button class="view-btn" data-view="modified" role="tab" disabled>After</button>
+          <span class="view-hint" id="viewHint"></span>
+        </div>
         <div class="stage" id="stage">
           <img class="stage-image" id="stageImage" alt="">
+          <img class="stage-image stage-image-modified" id="stageImageModified" alt="" aria-hidden="true">
           <div class="stage-overlay" id="stageOverlay"></div>
         </div>
         <div class="caption" id="imgCaption"></div>

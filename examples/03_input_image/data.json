@@ -1,0 +1,57 @@
+{
+  "id": "03_input_image",
+  "image_id": "input_image",
+  "image": "original.jpg",
+  "modified_image": "modified.jpg",
+  "width": 640,
+  "height": 480,
+  "ground_truth": {
+    "lat": 42.293855,
+    "lon": -83.711542
+  },
+  "location_estimate": {
+    "latitude": 42.2904,
+    "longitude": -83.7143,
+    "confidence": "High",
+    "region": "United States, Michigan, Ann Arbor"
+  },
+  "reasoning": "The image depicts an indoor hallway or common area of an educational institution. The first major clue is the prominent block 'M' logo on the small black sign on the white wall, which is the primary identity of the University of Michigan. This immediately narrows the location to the United States and specifically to Ann Arbor, Michigan. Further confirmation is found on the flyers and posters, which display the 'Michigan Engineering' brand and the text 'University of Michigan'. The clear acrylic sign identifies the room as the 'Rockwell Classroom', noting it was a 'Gift of Rockwell International Corporation'. Searching for the 'Rockwell Classroom' at the University of Michigan identifies it as room 1001 in the Electrical Engineering and Computer Science (EECS) building, located on the university's North Campus. The distinctive pinkish-red cinder block walls and patterned carpet are characteristic of the interior design found in several North Campus engineering buildings.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "yellow letter M logo on a black sign",
+      "geolocation_element": "University of Michigan block M logo",
+      "target_concept": "logo",
+      "level": "city",
+      "mask": "masks/yellow_letter_M_logo_on_a_black_sign_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_1",
+      "object_description": "clear acrylic sign on a pink wall",
+      "geolocation_element": "text reading Rockwell Classroom, Gift of Rockwell International Corporation",
+      "target_concept": "sign",
+      "level": "street",
+      "mask": "masks/clear_acrylic_sign_on_a_pink_wall_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "white flyer in a clear holder",
+      "geolocation_element": "Michigan Engineering logo and University of Michigan text",
+      "target_concept": "flyer",
+      "level": "city",
+      "mask": "masks/white_flyer_in_a_clear_holder_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "white poster on a pink wall",
+      "geolocation_element": "University of Michigan branding",
+      "target_concept": "poster",
+      "level": "city",
+      "mask": "masks/white_poster_on_a_pink_wall_mask.png",
+      "color": "#c47f86"
+    }
+  ]
+}

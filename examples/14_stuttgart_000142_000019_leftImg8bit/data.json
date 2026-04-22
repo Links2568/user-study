@@ -2,6 +2,7 @@
   "id": "14_stuttgart_000142_000019_leftImg8bit",
   "image_id": "stuttgart_000142_000019_leftImg8bit",
   "image": "original.jpg",
+  "modified_image": null,
   "width": 1600,
   "height": 800,
   "ground_truth": null,

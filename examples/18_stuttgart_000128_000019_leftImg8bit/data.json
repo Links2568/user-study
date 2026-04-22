@@ -1,0 +1,54 @@
+{
+  "id": "18_stuttgart_000128_000019_leftImg8bit",
+  "image_id": "stuttgart_000128_000019_leftImg8bit",
+  "image": "original.jpg",
+  "modified_image": null,
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.7758,
+    "longitude": 9.1829,
+    "confidence": "Medium",
+    "region": "Germany, Baden-Württemberg, Stuttgart"
+  },
+  "reasoning": "Country level: The scene shows right‑hand traffic, EU‑style license plates with the blue band and a white background, Germanic Gründerzeit stone façades, and a grey-blue parking meter marked with a white “P.” These cues point strongly to Germany rather than neighboring countries: the plate proportions and font look German, lane markings match German style, and the architecture and street furniture feel typical of German cities. Alternatives like Austria or Switzerland are less likely because the visible plate formatting and parking meter style look specifically German.\nCity level: Among German cities, the dense late‑19th‑century block façades and the view down a slope toward a valley suggest a hilly city. The plate on the right appears to start with “S …”, plausible for Stuttgart (single-letter city code “S”). The far background shows terrain dropping into a basin, a common characteristic of Stuttgart’s center set in hills, whereas flatter cities like Braunschweig or Berlin are less consistent. This, combined with the prevalence of Mercedes vehicles (common anywhere in Germany but especially unsurprising in Stuttgart), narrows to Stuttgart over alternatives like Munich or Frankfurt, which have different skyline cues in comparable districts.\nStreet level: The street is a relatively narrow two‑lane corridor with continuous parallel parking, ornate sandstone façades with bay supports and window flower boxes, suspended mid‑street luminaires on cables, and modern parking meters along the curb. These elements indicate a central residential/office street in Stuttgart’s inner districts (e.g., west or south of the core) rather than a major arterial. The specific combination of suspended streetlights, uniform stone façades, and a downhill view toward denser buildings helps distinguish this street from nearby wider boulevards or tram‑tracked corridors.\nOverall, these details collectively indicate inner Stuttgart, Germany.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white license plate on a silver sedan",
+      "geolocation_element": "EU blue band with country code, German plate font and spacing pattern",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_silver_sedan_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "stone building facade on the left",
+      "geolocation_element": "Gründerzeit architectural style prevalent in German cities",
+      "target_concept": "building facade",
+      "level": "country",
+      "mask": "masks/stone_building_facade_on_the_left_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "rear license plate on a grey BMW ahead",
+      "geolocation_element": "single-letter city code pattern likely 'S' indicating Stuttgart",
+      "target_concept": "license plate",
+      "level": "city",
+      "mask": "masks/rear_license_plate_on_a_grey_BMW_ahead_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_7",
+      "object_description": "parking sign on a post near the curb",
+      "geolocation_element": "European/German 'P' parking symbol style",
+      "target_concept": "parking sign",
+      "level": "country",
+      "mask": "masks/parking_sign_on_a_post_near_the_curb_mask.png",
+      "color": "#4a6f5c"
+    }
+  ]
+}

@@ -9,22 +9,26 @@ const state = {
   stickyClue: null,
   showAll: false,
   overlayAlpha: 0.8,
+  view: 'original',   // 'original' | 'modified'
 };
 
 const el = {
-  thumbStrip:     document.getElementById('thumbStrip'),
-  sampleCount:    document.getElementById('sampleCount'),
-  stage:          document.getElementById('stage'),
-  stageImage:     document.getElementById('stageImage'),
-  stageOverlay:   document.getElementById('stageOverlay'),
-  imgCaption:     document.getElementById('imgCaption'),
-  reasoningText:  document.getElementById('reasoningText'),
-  metaRow:        document.getElementById('metaRow'),
-  clueList:       document.getElementById('clueList'),
-  opacityRange:   document.getElementById('opacityRange'),
-  opacityValue:   document.getElementById('opacityValue'),
-  showAllToggle:  document.getElementById('showAllToggle'),
-  buildDate:      document.getElementById('buildDate'),
+  thumbStrip:         document.getElementById('thumbStrip'),
+  sampleCount:        document.getElementById('sampleCount'),
+  stage:              document.getElementById('stage'),
+  stageImage:         document.getElementById('stageImage'),
+  stageImageModified: document.getElementById('stageImageModified'),
+  stageOverlay:       document.getElementById('stageOverlay'),
+  imgCaption:         document.getElementById('imgCaption'),
+  reasoningText:      document.getElementById('reasoningText'),
+  metaRow:            document.getElementById('metaRow'),
+  clueList:           document.getElementById('clueList'),
+  opacityRange:       document.getElementById('opacityRange'),
+  opacityValue:       document.getElementById('opacityValue'),
+  showAllToggle:      document.getElementById('showAllToggle'),
+  viewToggle:         document.getElementById('viewToggle'),
+  viewHint:           document.getElementById('viewHint'),
+  buildDate:          document.getElementById('buildDate'),
 };
 
 el.buildDate.textContent = new Date().toISOString().slice(0, 10);
@@ -49,9 +53,11 @@ function renderStrip() {
     const node = document.createElement('div');
     node.className = 'thumb';
     node.dataset.id = s.id;
+    node.title = s.has_modified ? 'has generated version' : 'segmentation only';
     node.innerHTML = `
       <div class="thumb-num">${String(i + 1).padStart(2, '0')}</div>
       <img src="${s.thumbnail}" alt="" loading="lazy">
+      ${s.has_modified ? '<div class="mod-dot" aria-hidden="true"></div>' : ''}
     `;
     node.addEventListener('click', () => loadSample(s));
     el.thumbStrip.appendChild(node);
@@ -83,6 +89,21 @@ function renderSample(data, meta) {
   el.stageImage.onload = () => positionOverlay();
   el.stageImage.src = `${meta.path}/${data.image}`;
   el.stageImage.alt = data.image_id;
+
+  // Modified image: preload if available, otherwise hide the second layer.
+  const modBtn = el.viewToggle.querySelector('[data-view="modified"]');
+  if (data.modified_image) {
+    el.stageImageModified.src = `${meta.path}/${data.modified_image}`;
+    el.stageImageModified.alt = `${data.image_id} (modified)`;
+    modBtn.removeAttribute('disabled');
+    el.viewHint.textContent = '切り替え: before / after';
+  } else {
+    el.stageImageModified.removeAttribute('src');
+    modBtn.setAttribute('disabled', '');
+    el.viewHint.textContent = 'segmentation only — no generated image';
+  }
+  // Always reset to "before" when switching samples.
+  setView('original');
 
   el.imgCaption.textContent = `${data.image_id}  ·  ${data.width} × ${data.height}`;
   el.reasoningText.textContent = data.reasoning || '(no reasoning available)';
@@ -210,6 +231,20 @@ function updateOverlayLayers() {
     el.stageOverlay.appendChild(layer);
   });
 }
+
+// ---------- view switching ----------
+function setView(view) {
+  state.view = view;
+  el.stage.classList.toggle('show-modified', view === 'modified');
+  el.viewToggle.querySelectorAll('.view-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view);
+  });
+}
+el.viewToggle.addEventListener('click', (e) => {
+  const btn = e.target.closest('.view-btn');
+  if (!btn || btn.hasAttribute('disabled')) return;
+  setView(btn.dataset.view);
+});
 
 // ---------- controls ----------
 el.opacityRange.addEventListener('input', (e) => {

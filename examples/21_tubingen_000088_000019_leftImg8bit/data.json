@@ -1,0 +1,54 @@
+{
+  "id": "21_tubingen_000088_000019_leftImg8bit",
+  "image_id": "tubingen_000088_000019_leftImg8bit",
+  "image": "original.jpg",
+  "modified_image": null,
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 48.7758,
+    "longitude": 9.1829,
+    "confidence": "Medium",
+    "region": "Germany, Baden-Württemberg, Stuttgart"
+  },
+  "reasoning": "Country level: The scene shows right‑hand traffic, EU‑style long white license plates with a blue band, and a round blue no‑stopping sign with a red X on a grey pole. These are strong indicators for continental Europe. The building style (cream stucco facade, green shutters, steep tiled roof with dormers) and the small granite setts along the curb are typical of German‑speaking Central Europe (Germany/Switzerland/Austria). The overall road furniture and parking layout match Germany most closely. City level: The curving, steep hillside residential street lined with older villas and dense greenery is characteristic of hill districts in Stuttgart. The Mercedes hood ornament in the foreground suggests data captured from a Mercedes vehicle; while not decisive, it is consistent with Stuttgart (home to Mercedes‑Benz) and with known datasets collected there. Alternative German cities like Munich or Freiburg also have hills, but Stuttgart’s inner neighborhoods frequently pair retaining walls, vine‑covered slopes, and villa architecture on winding roads. Street level: Specifics include a single‑lane uphill curve, a vine‑covered wall with closely packed parallel parking on the left, a black metal pedestrian railing on the right, a stone retaining wall just before the bend, and a no‑stopping sign on the right sidewalk. This combination narrows to a residential hillside street rather than a main road, likely in a west/south hillside district of Stuttgart.",
+  "clues": [
+    {
+      "id": "clue_3",
+      "object_description": "cream house with dormer windows above a facade",
+      "geolocation_element": "Central European villa architecture typical of southwestern Germany/Switzerland",
+      "target_concept": "house",
+      "level": "country",
+      "mask": "masks/cream_house_with_dormer_windows_above_a_facade_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "black metal railing along the sidewalk",
+      "geolocation_element": "railing style common on steep European sidewalks; suggests hillside street context",
+      "target_concept": "railing",
+      "level": "city",
+      "mask": "masks/black_metal_railing_along_the_sidewalk_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_5",
+      "object_description": "stone retaining wall at the outside of the curve",
+      "geolocation_element": "retaining walls on winding hillside streets typical in Stuttgart neighborhoods",
+      "target_concept": "retaining wall",
+      "level": "city",
+      "mask": "masks/stone_retaining_wall_at_the_outside_of_the_curve_mask.png",
+      "color": "#6e5b8c"
+    },
+    {
+      "id": "clue_7",
+      "object_description": "silver hood ornament at the front of the car",
+      "geolocation_element": "Mercedes‑Benz logo hinting at Stuttgart as an automotive hub (weak city prior)",
+      "target_concept": "hood ornament",
+      "level": "city",
+      "mask": "masks/silver_hood_ornament_at_the_front_of_the_car_mask.png",
+      "color": "#4a6f5c"
+    }
+  ]
+}

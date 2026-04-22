@@ -1,0 +1,48 @@
+{
+  "id": "11_gradio_image",
+  "image_id": "gradio_image",
+  "image": "original.jpg",
+  "modified_image": "modified.jpg",
+  "width": 480,
+  "height": 640,
+  "ground_truth": {
+    "lat": 53.5535,
+    "lon": 10.0027
+  },
+  "location_estimate": {
+    "latitude": 39.16641,
+    "longitude": -86.52683,
+    "confidence": "High",
+    "region": "United States, Indiana, Bloomington"
+  },
+  "reasoning": "The analysis begins with the identification of 'PNC Bank', a prominent financial institution primarily operating in the United States, suggesting the country of origin. The architectural style of the multi-story brick building and the presence of typical North American vehicles like the Ford Ranger and Subaru WRX support this. Moving to the city level, the specific combination of 'Joe's Pizza' and 'Route 36 Coffee Roasters' is highly diagnostic. A search for these neighboring businesses identifies their location in Bloomington, Indiana, specifically near the Indiana University campus. The 'Route 36' logo, featuring a highway shield inside a coffee cup, is a unique local brand. At the street level, the address '110' (partially visible) on S Indiana Ave and the exact sequential placement of PNC Bank, Joe's Pizza, and the coffee shop confirm the precise building at the intersection of S Indiana Ave and E Kirkwood Ave.",
+  "clues": [
+    {
+      "id": "clue_1",
+      "object_description": "red and white pizza sign above a door",
+      "geolocation_element": "Joe's Pizza local branding, specific font style",
+      "target_concept": "pizza sign",
+      "level": "street",
+      "mask": "masks/red_and_white_pizza_sign_above_a_door_mask.png",
+      "color": "#4b7e87"
+    },
+    {
+      "id": "clue_2",
+      "object_description": "red coffee shop sign with a logo",
+      "geolocation_element": "Route 36 Coffee Roasters name and shield logo, local business",
+      "target_concept": "coffee shop sign",
+      "level": "street",
+      "mask": "masks/red_coffee_shop_sign_with_a_logo_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "pink sedan in a parking spot",
+      "geolocation_element": "Subaru WRX model with custom pink wrap",
+      "target_concept": "sedan",
+      "level": "city",
+      "mask": "masks/pink_sedan_in_a_parking_spot_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}

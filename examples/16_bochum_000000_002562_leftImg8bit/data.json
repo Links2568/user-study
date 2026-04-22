@@ -1,0 +1,54 @@
+{
+  "id": "16_bochum_000000_002562_leftImg8bit",
+  "image_id": "bochum_000000_002562_leftImg8bit",
+  "image": "original.jpg",
+  "modified_image": null,
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 51.45,
+    "longitude": 7.01,
+    "confidence": "Low",
+    "region": "Germany, North Rhine–Westphalia, Essen (approx.)"
+  },
+  "reasoning": "Country level: The scene shows multiple strong German cues. The emergency doctor vehicle has the word “NOTARZT” and the EU emergency number “112,” a livery style widely used in Germany. The bus stop uses the distinctive German “H” (Haltestelle) symbol on a white oval sign with green/yellow ring. Vehicles have EU-style plates consistent with German formatting, and the built environment (paving stones, curb design, traffic signal heads) matches Germany. Together these exclude neighboring countries with different bus stop symbols (e.g., Austria’s different logo, Netherlands’ blue signs). \nCity level: The presence of in-street rail tracks indicates a tram network. Many German cities have trams, but the overall look—postwar mid-rise housing blocks, mature street trees, and Ruhr-style street furniture—points toward North Rhine–Westphalia. The emergency vehicle color scheme (white/orange with “NOTARZT”) and the bus stop flag layout resemble those commonly seen in the Ruhr area (Essen/Duisburg/Gelsenkirchen). There is no unique landmark to assert a specific city, but Ruhr characteristics make NRW more plausible than southern or eastern Germany. \nStreet level: The carriageway includes embedded tram tracks with a side platform bus/tram stop directly beside a low blue-and-glass car-wash building bearing large “Super Wash” letters. A grey signal pole stands at the crossing with short zebra markings across a minor side street. Low hedges, a graffiti-tagged retaining wall, and a mid-century apartment block frame the stop. These features describe a specific curbside stop next to a car wash along a tram corridor, narrowing within the chosen city though still not uniquely identifiable without readable stop names. ",
+  "clues": [
+    {
+      "id": "clue_2",
+      "object_description": "ambulance car with orange stripe",
+      "geolocation_element": "word NOTARZT in German; emergency number 112; medical service insignia style typical in Germany",
+      "target_concept": "ambulance car",
+      "level": "country",
+      "mask": "masks/ambulance_car_with_orange_stripe_mask.png",
+      "color": "#8ba867"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "tram tracks in the roadway",
+      "geolocation_element": "presence of on-street tramway indicating cities with tram networks (common in Germany, Ruhr area)",
+      "target_concept": "tram tracks",
+      "level": "country",
+      "mask": "masks/tram_tracks_in_the_roadway_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "car wash sign on a blue building",
+      "geolocation_element": "readable English words 'Super Wash' as a commercial name adjacent to the stop (street-level locator)",
+      "target_concept": "car wash sign",
+      "level": "street",
+      "mask": "masks/car_wash_sign_on_a_blue_building_mask.png",
+      "color": "#c9a96a"
+    },
+    {
+      "id": "clue_6",
+      "object_description": "timetable board on the pole",
+      "geolocation_element": "German layout of line numbers and stop info board at Haltestelle",
+      "target_concept": "timetable board",
+      "level": "country",
+      "mask": "masks/timetable_board_on_the_pole_mask.png",
+      "color": "#a25e4b"
+    }
+  ]
+}

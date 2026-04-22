@@ -1,0 +1,45 @@
+{
+  "id": "22_bremen_000260_000019_leftImg8bit",
+  "image_id": "bremen_000260_000019_leftImg8bit",
+  "image": "original.jpg",
+  "modified_image": null,
+  "width": 1600,
+  "height": 800,
+  "ground_truth": null,
+  "location_estimate": {
+    "latitude": 50.9305,
+    "longitude": 6.9435,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, Cologne (approx. central corridor near Barbarossaplatz/Aachener Straße)"
+  },
+  "reasoning": "Country level: The scene shows EU-style road markings, a blue parking sign with a white “P,” embedded tram tracks with overhead catenary, and multiple German-language cues. I can read “vhs” on the rooftop of a round white tower—‘Volkshochschule’ is a German adult-education institution name used across Germany. A storefront sign on the right includes the German word “Kosmetik.” License plates follow the German format with the EU blue band; one plate clearly begins with “AC,” a valid German city code. Collectively, these indicators point to Germany and rule out neighboring countries with different signage and plate formats.  City level: The AC plate belongs to Aachen, but vehicles travel widely, so it only hints regionally (NRW). The combination of street-running tram tracks, dense mid-rise blocks, and an Ibis hotel sign along a main corridor matches several NRW cities (Cologne, Düsseldorf, Essen). The prominent “vhs” signage on a cylindrical tower near a corridor with trams and an Ibis nearby is characteristic of central Cologne corridors around Barbarossaplatz/Neumarkt, where Köln’s VHS signage is commonly visible and Ibis hotels sit on tram arteries; this fit is stronger than Düsseldorf (more U‑Bahn portals) or Essen (different block morphology).  Street level: The street has dual tram rails centered in the carriageway, with a narrow leaf-covered triangular traffic island on the right, metered curb parking, and mid-block a vertical red “ibis” hotel sign on a tan building, while ahead-left the white cylindrical tower with “vhs” letters caps the skyline. This specific pairing (ibis sign on the right facade, VHS-topped round tower ahead, and a tram corridor with catenary) suggests a central Cologne arterial such as the approaches near Barbarossaplatz/Aachener Straße. While not uniquely identifiable to a single block from this frame alone, it narrows to that inner-city zone.  Overall, I infer Cologne, Germany, with moderate confidence; exact street remains approximate.",
+  "clues": [
+    {
+      "id": "clue_0",
+      "object_description": "white license plate on a brown van at the right curb",
+      "geolocation_element": "German EU plate format with blue EU band; visible prefix 'AC' indicating Aachen registration",
+      "target_concept": "license plate",
+      "level": "country",
+      "mask": "masks/white_license_plate_on_a_brown_van_at_the_right_cu_mask.png",
+      "color": "#d9644d"
+    },
+    {
+      "id": "clue_3",
+      "object_description": "metal tram track in the center of the roadway",
+      "geolocation_element": "street-running tramway typical of German Stadtbahn networks",
+      "target_concept": "tram track",
+      "level": "country",
+      "mask": "masks/metal_tram_track_in_the_center_of_the_roadway_mask.png",
+      "color": "#c47f86"
+    },
+    {
+      "id": "clue_4",
+      "object_description": "overhead catenary wire above the street",
+      "geolocation_element": "tram/trolley catenary indicating an active tram corridor common in German cities",
+      "target_concept": "catenary wire",
+      "level": "country",
+      "mask": "masks/overhead_catenary_wire_above_the_street_mask.png",
+      "color": "#c9a96a"
+    }
+  ]
+}
