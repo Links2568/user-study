@@ -1,24 +1,6 @@
 {
   "samples": [
     {
-      "id": "01_input_image",
-      "path": "examples/01_input_image",
-      "thumbnail": "examples/01_input_image/original.jpg",
-      "image_id": "input_image",
-      "clue_count": 4,
-      "region": "North America, USA, Michigan, Ann Arbor",
-      "has_modified": true
-    },
-    {
-      "id": "02_input_image",
-      "path": "examples/02_input_image",
-      "thumbnail": "examples/02_input_image/original.jpg",
-      "image_id": "input_image",
-      "clue_count": 3,
-      "region": "Germany, Hamburg",
-      "has_modified": true
-    },
-    {
       "id": "03_input_image",
       "path": "examples/03_input_image",
       "thumbnail": "examples/03_input_image/original.jpg",
@@ -37,55 +19,10 @@
       "has_modified": true
     },
     {
-      "id": "05_gradio_image",
-      "path": "examples/05_gradio_image",
-      "thumbnail": "examples/05_gradio_image/original.jpg",
-      "image_id": "gradio_image",
-      "clue_count": 4,
-      "region": "North America, USA, Michigan, Ann Arbor",
-      "has_modified": true
-    },
-    {
       "id": "06_input_image",
       "path": "examples/06_input_image",
       "thumbnail": "examples/06_input_image/original.jpg",
       "image_id": "input_image",
-      "clue_count": 3,
-      "region": "Ann Arbor, Michigan, USA",
-      "has_modified": true
-    },
-    {
-      "id": "07_gradio_image",
-      "path": "examples/07_gradio_image",
-      "thumbnail": "examples/07_gradio_image/original.jpg",
-      "image_id": "gradio_image",
-      "clue_count": 3,
-      "region": "USA, Michigan, Ann Arbor",
-      "has_modified": true
-    },
-    {
-      "id": "08_gradio_image",
-      "path": "examples/08_gradio_image",
-      "thumbnail": "examples/08_gradio_image/original.jpg",
-      "image_id": "gradio_image",
-      "clue_count": 3,
-      "region": "Hamburg, Germany",
-      "has_modified": true
-    },
-    {
-      "id": "09_input_image",
-      "path": "examples/09_input_image",
-      "thumbnail": "examples/09_input_image/original.jpg",
-      "image_id": "input_image",
-      "clue_count": 4,
-      "region": "Germany, Hamburg",
-      "has_modified": true
-    },
-    {
-      "id": "10_gradio_image",
-      "path": "examples/10_gradio_image",
-      "thumbnail": "examples/10_gradio_image/original.jpg",
-      "image_id": "gradio_image",
       "clue_count": 3,
       "region": "Ann Arbor, Michigan, USA",
       "has_modified": true
@@ -97,15 +34,6 @@
       "image_id": "gradio_image",
       "clue_count": 3,
       "region": "United States, Indiana, Bloomington",
-      "has_modified": true
-    },
-    {
-      "id": "12_gradio_image",
-      "path": "examples/12_gradio_image",
-      "thumbnail": "examples/12_gradio_image/original.jpg",
-      "image_id": "gradio_image",
-      "clue_count": 4,
-      "region": "United States, Michigan, Ann Arbor",
       "has_modified": true
     },
     {

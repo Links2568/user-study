@@ -96,7 +96,7 @@ function renderSample(data, meta) {
     el.stageImageModified.src = `${meta.path}/${data.modified_image}`;
     el.stageImageModified.alt = `${data.image_id} (modified)`;
     modBtn.removeAttribute('disabled');
-    el.viewHint.textContent = '切り替え: before / after';
+    el.viewHint.textContent = 'toggle: before / after';
   } else {
     el.stageImageModified.removeAttribute('src');
     modBtn.setAttribute('disabled', '');
